@@ -1,6 +1,7 @@
 public class Elfo {
     private String nome;
     private int flechas,experiencia;
+    public Status status = Status.VIVO;
     
     public void atirarFlechaDwarf(Dwarf dwarf){
         dwarf.receberFlechada();
@@ -9,9 +10,22 @@ public class Elfo {
         }    
     
     public String toString() {  
-        return getNome() + " possui " + getFlechas() + " flechas e " + getXp() + " níveis de experiência.";
-        //System.out.println(getNome() + " possui " + getFlechas() + " flechas e " + getXp() + " níveis de experiência."); 
-        //return null;
+        String textoNivel = "nível";
+        String textoFlechas = "flecha";
+        
+        if(Math.abs(this.flechas)!=1){
+            textoFlechas+="s";
+        }
+        if(Math.abs(this.experiencia)!=1){
+            textoNivel="níveis";
+        }
+        
+        return String.format("%s possui %d %s e %d %s de experiência.",
+            this.nome,
+            this.flechas,
+            textoFlechas,
+            this.experiencia,
+            textoNivel);
     }  
         
     public Elfo(String n) {
@@ -30,6 +44,10 @@ public class Elfo {
     
     public String getNome() {
         return nome;
+    }
+    
+    public Status getStatus(){
+        return this.status;
     }
     
     public int getFlechas() {
