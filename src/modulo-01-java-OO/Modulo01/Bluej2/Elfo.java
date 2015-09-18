@@ -3,6 +3,16 @@ public class Elfo {
     private int flechas,experiencia;
     public Status status = Status.VIVO;
     
+    public Elfo(String n) {
+        nome = n;
+        flechas = 42;
+    }
+    
+    public Elfo(String n, int flech) {
+        nome = n;
+        flechas = flech;
+    }
+    
     public void atirarFlechaDwarf(Dwarf dwarf){
         dwarf.receberFlechada();
         experiencia++;
@@ -27,16 +37,6 @@ public class Elfo {
             this.experiencia,
             textoNivel);
     }  
-        
-    public Elfo(String n) {
-        nome = n;
-        flechas = 42;
-    }
-    
-    public Elfo(String n, int flech) {
-        nome = n;
-        flechas = flech;
-    }
     
     public int getXp(){
         return experiencia;
