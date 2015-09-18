@@ -53,7 +53,7 @@ public class ElfoTest
     @Test
     public void elfoAtiraFlechaEmDwarf(){
         Elfo elfo = new Elfo("elfo");
-        Dwarf dwarf = new Dwarf();
+        Dwarf dwarf = new Dwarf("Josias");
         int qtdFlechasEsperadas = 41;
         int experienciaEsperada = 1;
         int vidaEsperadaDoAnao = 100;
@@ -67,8 +67,8 @@ public class ElfoTest
     public void doisElfosAtiramEmDoisDwarves(){
         Elfo elfo1 = new Elfo("elfo1");
         Elfo elfo2 = new Elfo("elfo2");
-        Dwarf dwarf1 = new Dwarf();
-        Dwarf dwarf2 = new Dwarf();
+        Dwarf dwarf1 = new Dwarf("Josnel");
+        Dwarf dwarf2 = new Dwarf("Josnelson");
         int qtdFlechasEsperadas = 40;
         int experienciaEsperada = 2;
         int vidaEsperadaDoAnao = 90;
