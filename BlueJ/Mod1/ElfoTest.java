@@ -44,7 +44,7 @@ public class ElfoTest
     }
     
     @Test
-    public void elfoCriadoComNoomeNullEFlechasNegativas(){
+    public void elfoCriadoComNomeNullEFlechasNegativas(){
         Elfo serasa = new Elfo(null,-33);
         assertNull(serasa.getNome());
         assertEquals(-33,serasa.getFlechas());
