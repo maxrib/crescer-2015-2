@@ -44,6 +44,13 @@ public class ElfoTest
     }
     
     @Test
+    public void elfoCriadoComNoomeNullEFlechasNegativas(){
+        Elfo serasa = new Elfo(null,-33);
+        assertNull(serasa.getNome());
+        assertEquals(-33,serasa.getFlechas());
+    }
+    
+    @Test
     public void elfoCriadoComNomePoucasFlechas(){
         Elfo mendigo = new Elfo("mendigo",3);
         assertEquals("mendigo",mendigo.getNome());
