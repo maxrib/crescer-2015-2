@@ -37,6 +37,13 @@ public class ElfoTest
     }
     
     @Test
+    public void elfoCriadoComNomeNullEMuitasFlechas(){
+        Elfo maurics = new Elfo(null,666);
+        assertNull(maurics.getNome());
+        assertEquals(666,maurics.getFlechas());
+    }
+    
+    @Test
     public void elfoCriadoComNomePoucasFlechas(){
         Elfo mendigo = new Elfo("mendigo",3);
         assertEquals("mendigo",mendigo.getNome());
