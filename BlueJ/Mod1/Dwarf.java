@@ -53,4 +53,8 @@ public class Dwarf {
     public Status getStatus(){
         return this.status;
     }
+    
+    public int getXp(){
+        return this.experiencia;
+    }
 }
