@@ -28,6 +28,16 @@ public class DwarfTest
     }
     
     @Test
+    public void dwarf10FlechadasRecebidas(){
+        Dwarf gimli = new Dwarf("Malaquias");
+        int c,vidaEsperada = 10;
+            for(c=0;c<10;c++){
+                gimli.receberFlechada();
+            }
+        assertEquals(vidaEsperada,gimli.getVida());
+    }
+    
+    @Test
     public void anaoMorreCom11Flechadas(){
         int c;
         Dwarf tosco = new Dwarf("gimli");
