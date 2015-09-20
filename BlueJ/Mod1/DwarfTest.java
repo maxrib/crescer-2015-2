@@ -67,7 +67,26 @@ public class DwarfTest
         //Assert
         assertEquals(vidaEsperada,gimli.getVida());
     }
-   
+    
+    @Test
+    public void dwarfSemNomeVerficarDataNascimento(){
+        Dwarf anao = new Dwarf();
+        assertEquals("1/1/1",anao.getNascimento());
+    }
+    
+    @Test
+    public void dwarfComNomeVerficarDataNascimento(){
+        Dwarf anao = new Dwarf("anao");
+        assertEquals("anao",anao.getNome());
+        assertEquals("1/1/1",anao.getNascimento());
+    }
+    
+    @Test
+    public void dwarfComNomeNullVerficarDataNascimento(){
+        Dwarf anao = new Dwarf(null);
+        assertNull(anao.getNome());
+        assertEquals("1/1/1",anao.getNascimento());
+    }
 }
 // AAA
 // Arrange
