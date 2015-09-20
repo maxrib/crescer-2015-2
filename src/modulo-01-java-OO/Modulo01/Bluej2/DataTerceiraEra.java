@@ -1,18 +1,24 @@
 public class DataTerceiraEra {
-    private String mes;
-    private int dia,ano;
+    private int dia,mes,ano;
     
-    public DataTerceiraEra(int dia, String mes, int ano){
+    public  DataTerceiraEra(int dia, int mes, int ano){
         this.dia=dia;
         this.mes=mes;
         this.ano=ano;
+    }
+    
+    public String toStringData(){
+        return String.format("%d/%d/%d",
+            this.dia,
+            this.mes,
+            this.ano);
     }
     
     public int getDia(){
         return this.dia;
     }
     
-    public String getMes(){
+    public int getMes(){
         return this.mes;
     }
     
@@ -21,7 +27,6 @@ public class DataTerceiraEra {
     }
     
     public boolean ehBissexto(){
-        boolean x = (ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0);
-        return x;
+        return (this.ano % 400 == 0) || (this.ano % 4 == 0 && this.ano % 100 != 0);
     }
 }

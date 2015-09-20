@@ -22,7 +22,7 @@ public class DwarfTest
     }
     
     @Test
-    public void anaoPermanceComZeroDeVidaApósVáriasFlechadas(){
+    public void anaoPermaneceComZeroDeVidaApósVáriasFlechadas(){
         int c;
         Dwarf tosco = new Dwarf("tosco");
         for(c=0;c<100;c++){
@@ -41,6 +41,7 @@ public class DwarfTest
         //Assert
         assertEquals(vidaEsperada,gimli.getVida());
     }
+   
 }
 // AAA
 // Arrange
