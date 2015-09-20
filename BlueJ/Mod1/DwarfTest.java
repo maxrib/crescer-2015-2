@@ -6,9 +6,25 @@ import org.junit.Test;
 public class DwarfTest
 {
     @Test
-    public void dwarfNasceCom110DeVida(){
+    public void dwarfNasceCom110DeVidaEZeroExperiencia(){
         Dwarf gimli = new Dwarf("gimli");
         assertEquals(110, gimli.getVida());
+        assertEquals(0,gimli.getXp());
+    }
+    
+    @Test
+    public void dwarfsemNomeNasceCom110DeVidaEZeroExperiencia(){
+        Dwarf gimli = new Dwarf();
+        assertEquals(110, gimli.getVida());
+        assertEquals(0,gimli.getXp());
+    }
+    
+    @Test
+    public void dwarfComNomeNullNasceCom110DeVidaEZeroExperiencia(){
+        Dwarf gimli = new Dwarf(null);
+        assertEquals(null,gimli.getNome());
+        assertEquals(110, gimli.getVida());
+        assertEquals(0,gimli.getXp());
     }
     
     @Test
