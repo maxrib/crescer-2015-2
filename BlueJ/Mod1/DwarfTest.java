@@ -13,7 +13,7 @@ public class DwarfTest
     }
     
     @Test
-    public void dwarfsemNomeNasceCom110DeVidaEZeroExperiencia(){
+    public void dwarfSemNomeNasceCom110DeVidaEZeroExperiencia(){
         Dwarf gimli = new Dwarf();
         assertEquals(110, gimli.getVida());
         assertEquals(0,gimli.getXp());
