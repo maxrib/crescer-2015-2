@@ -4,6 +4,9 @@ public class Dwarf {
     private int vida=110,experiencia=0;
     public Status status = Status.VIVO;
     
+    public Dwarf(){
+    }
+    
     public Dwarf(String n) {
         nome = n;
     }
