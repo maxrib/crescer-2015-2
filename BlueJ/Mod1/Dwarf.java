@@ -42,6 +42,10 @@ public class Dwarf {
         return x;
     }
 
+    public String getNome(){
+        return this.nome;
+    }
+    
     public int getVida(){
         return this.vida;
     }
