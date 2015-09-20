@@ -41,7 +41,14 @@ public class Dwarf {
         
         return x;
     }
-
+    
+    public String getNascimento(){
+        return String.format("%s/%s/%s",
+            this.dataNascimento.dia,
+            this.dataNascimento.mes,
+            this.dataNascimento.ano);
+    }
+    
     public String getNome(){
         return this.nome;
     }
