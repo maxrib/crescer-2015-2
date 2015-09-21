@@ -17,9 +17,14 @@ public class Inventario{
     
     public String getDescricoesItens(){
         int i;
-        String lista = "Itens: ";
+        String lista = "";
         for(i=0;i<itens.size();i++){
-            lista = lista + itens.get(i).getDesc() + ", ";
+            if(i==itens.size()-1){
+                lista = lista + itens.get(i).getDesc() + ".";
+            }
+            else{
+                lista = lista + itens.get(i).getDesc() + "";
+            }
         }
         return lista;
     }
