@@ -20,7 +20,17 @@ public class Item{
         return this.qtd;
     }
     
-    public void setQtdLeprechaun(){
+    public void aumentar1000Unidades(){
         this.qtd += 1000;
+    }
+    
+    public void aumentarUnidadesIrishDwarf(){
+        int soma=0;
+        
+        for(int c=0;c<=this.qtd;c++){
+            soma = soma + c;
+        }
+        
+        this.qtd = 1000 + soma;
     }
 }
