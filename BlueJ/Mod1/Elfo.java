@@ -17,7 +17,13 @@ public class Elfo {
         dwarf.receberFlechada();
         experiencia++;
         flechas--;
-        }    
+        }  
+        
+    public void atirarFlechaIrishDwarf(IrishDwarf irishDwarf){
+        irishDwarf.receberFlechada();
+        experiencia++;
+        flechas--;
+        }  
     
     public String toString() {  
         String textoNivel = "nível";
