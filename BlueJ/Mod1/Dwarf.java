@@ -42,11 +42,23 @@ public class Dwarf {
             x *= -33;
         }
         
-        if(!dataNascimento.ehBissexto() && (this.nome.equals("Seixas") || this.nome.equals("Meireles"))){
-            x = x * 33 % 100;
+        if(dataNascimento.ehBissexto() && (this.nome.equals("Leprechaun"))){
+            x *= -33;
+        }
+        
+        if(!dataNascimento.ehBissexto() 
+            && (this.nome.equals("Seixas") 
+            || this.nome.equals("Meireles"))){
+                x = x * 33 % 100;
         }
         
         return x;
+    }
+    
+    public void tentarSorte(){
+        if(getNumeroSorte()==-3333.0){
+            item.setQtdLeprechaun();
+        }
     }
     
     public String getNascimento(){
