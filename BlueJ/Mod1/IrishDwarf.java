@@ -54,11 +54,12 @@ public class IrishDwarf {
         return x;
     }
     
-    public void tentarSorte(){
+    /*public void tentarSorte(){
         if(getNumeroSorte()==-3333.0){
-            aumentarUnidadesIrishDwarf();
+            item.aumentarUnidadesIrishDwarf();
         }
     }
+    */
     
     public String getNascimento(){
         return String.format("%s/%s/%s",
