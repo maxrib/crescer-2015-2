@@ -57,7 +57,7 @@ public class Dwarf {
     
     public void tentarSorte(){
         if(getNumeroSorte()==-3333.0){
-            item.setQtdLeprechaun();
+            item.aumentar1000Unidades();
         }
     }
     
