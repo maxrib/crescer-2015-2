@@ -49,6 +49,18 @@ public class Dwarf {
             this.dataNascimento.ano);
     }
     
+    public void adicionarItemInventario(Item item){
+        inventario.adicionarItem(item);
+    }
+    
+    public void perderItemInventario(Item item){
+        inventario.perderItem(item);
+    }
+    
+    public String getInventario(){
+        return inventario.getDescricoesItens();
+    }
+    
     public String getNome(){
         return this.nome;
     }
