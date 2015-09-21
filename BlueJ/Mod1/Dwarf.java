@@ -3,12 +3,19 @@ public class Dwarf {
     private DataTerceiraEra dataNascimento=new DataTerceiraEra(1,1,1);
     private int vida=110,experiencia=0;
     public Status status = Status.VIVO;
+    private Inventario inventario = new Inventario();
+    private Item item;
     
     public Dwarf(){
     }
     
     public Dwarf(String n) {
         nome = n;
+    }
+    
+    public Dwarf(String n, int dia, int mes, int ano) {
+        nome = n;
+        dataNascimento = new DataTerceiraEra(dia,mes,ano);
     }
     
     public void receberFlechada(){
