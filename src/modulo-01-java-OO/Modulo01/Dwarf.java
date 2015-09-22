@@ -4,6 +4,12 @@ public class Dwarf {
     private Status status;
     private DataTerceiraEra dataNascimento;
     
+    protected String nome;
+    protected int vida, experiencia;
+    protected Status status;
+    protected DataTerceiraEra dataNascimento;
+    protected Inventario inventario;
+
     public Dwarf() {
         this.vida = 110;
         this.status = Status.VIVO;
