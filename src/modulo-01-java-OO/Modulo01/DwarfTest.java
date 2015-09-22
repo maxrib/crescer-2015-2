@@ -26,17 +26,17 @@ public class DwarfTest
     @Test
     public void dwarfNasceComDataNascimentoPadrão() {
         Dwarf bofur = new Dwarf();
-        DataTerceiraEra esperada = new DataTerceiraEra(1,1,1);
-        DataTerceiraEra obtida = bofur.getDataNascimento();
-        assertEquals(esperada, obtida);
+        assertEquals(1, bofur.getDataNascimento().getDia());
+        assertEquals(1, bofur.getDataNascimento().getMes());
+        assertEquals(1, bofur.getDataNascimento().getAno());
     }
 
     @Test
     public void dwarfNasceComNomeEDataDeNascimento() {
-        DataTerceiraEra esperada = new DataTerceiraEra(12,11,1987);
         Dwarf bernardin = new Dwarf("Bernardin", new DataTerceiraEra(12, 11, 1987));
-        assertEquals(esperada, bernardin.getDataNascimento());
-        assertEquals("Bernardin", bernardin.getNome());
+        assertEquals(12, bernardin.getDataNascimento().getDia());
+        assertEquals(11, bernardin.getDataNascimento().getMes());
+        assertEquals(1987, bernardin.getDataNascimento().getAno());
     }
 
     @Test
@@ -147,6 +147,7 @@ public class DwarfTest
         assertEquals(0, gimli.getVida());
     }
 
+<<<<<<< HEAD
     @Test
     public void gerarNumeroAnoBissextoVidaEntre80e90() {
         // Arrange
@@ -292,4 +293,6 @@ public class DwarfTest
         assertEquals(Status.MORTO, orc.getStatus());
     }
 
+=======
+>>>>>>> f35c690e738777726243a049a998c692e6f5203d
 }
