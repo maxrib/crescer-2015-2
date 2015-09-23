@@ -32,7 +32,7 @@ public class ElfoNoturnoTest {
     }
     
     @Test
-    public void elfoNoturnoMorreComVariasFlechas(){
+    public void elfoNoturnoMorreApósAtirarVariasFlechas(){
         ElfoNoturno elfo = new ElfoNoturno("elfo");
         Dwarf dwarf = new Dwarf("dwarf");
         
