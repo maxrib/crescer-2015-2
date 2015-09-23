@@ -1,8 +1,8 @@
 /**
  * Representa objetos do tipo Elfo.
  */
-public class Elfo extends Personagem{
-    protected int flechas;
+public class Elfo extends Personagem {
+    private int flechas;
 
     /* Type initializer
      * Executa antes de cada construtor
@@ -14,7 +14,7 @@ public class Elfo extends Personagem{
         this.nome = nome;
         this.flechas = flechas;
         this.status = Status.VIVO;
-        this.vida = 80;
+        this.vida = 100;
     }
 
     /* Apenas para elucidar as diferenças entre int X Integer, esta duplicação não faz sentido.
@@ -43,11 +43,11 @@ public class Elfo extends Personagem{
         //experiencia += 1;
         //experiencia = experiencia + 1;
     }
-    
+
     public void atacarOrc(Orc orc){
         orc.levarAtaque();
     }
-    
+
     /*
      * ANTES:
      * public atirarFlechaRefactory(this.flechas, this.experiencia){
@@ -86,13 +86,13 @@ public class Elfo extends Personagem{
 
         boolean flechaNoSingular = Math.abs(this.flechas) == 1;
         boolean nivelNoSingular = Math.abs(this.experiencia) == 1;
-        
+
         // Ruby ou CoffeeScript:
         //"#{nome} possui #{flechas} #{textoFlechas} e #{experiencia} #{textoNiveis} de experiência."
-        
+
         // C# 6:
         //"\{nome} possui \{flechas} \{textoFlechas} e \{experiencia} \{textoNiveis} de experiência."
-        
+
         return String.format("%s possui %d %s e %d %s de experiência.",
             this.nome,
             this.flechas,
@@ -100,5 +100,4 @@ public class Elfo extends Personagem{
             this.experiencia,
             nivelNoSingular ? "nível" : "níveis");
     }
-    
 }

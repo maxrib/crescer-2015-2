@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Inventario {
-    private ArrayList<Item> itens = new ArrayList<>();
+    private final ArrayList<Item> itens = new ArrayList<>();
     
     public void adicionarItem(Item item) {
         this.itens.add(item);

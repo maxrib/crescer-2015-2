@@ -1,5 +1,4 @@
-public class Dwarf extends Personagem{
-    
+public class Dwarf extends Personagem {
     protected DataTerceiraEra dataNascimento;
 
     public Dwarf() {
@@ -68,5 +67,4 @@ public class Dwarf extends Personagem{
             this.inventario.aumentar1000UnidadesEmCadaItem();
         }
     }
-    
 }
