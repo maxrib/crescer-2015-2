@@ -1,10 +1,8 @@
 /**
  * Representa objetos do tipo Elfo.
  */
-public class Elfo {
-    private String nome;
-    private int flechas, experiencia, vida;
-    private Status status;
+public class Elfo extends Personagem {
+    private int flechas;
 
     /* Type initializer
      * Executa antes de cada construtor
@@ -46,19 +44,10 @@ public class Elfo {
         //experiencia = experiencia + 1;
     }
 
-    public void receberAtaqueDoOrc(Orc orc){
-        int dano = orc.getDanoDeAtaque();
-        this.vida -= dano;
-    }
-    
     public void atacarOrc(Orc orc){
-        orc.levarAtaqueDeElfo();
+        orc.levarAtaque();
     }
-    
-    public int getVida(){
-        return this.vida;
-    }
-    
+
     /*
      * ANTES:
      * public atirarFlechaRefactory(this.flechas, this.experiencia){
@@ -82,20 +71,8 @@ public class Elfo {
 
      */
 
-    public String getNome() {
-        return nome;
-    }
-
     public int getFlechas() {
         return this.flechas;
-    }
-
-    public int getExperiencia() {
-        return this.experiencia;
-    }
-    
-    public Status getStatus() {
-        return this.status;
     }
 
     /* 
@@ -109,13 +86,13 @@ public class Elfo {
 
         boolean flechaNoSingular = Math.abs(this.flechas) == 1;
         boolean nivelNoSingular = Math.abs(this.experiencia) == 1;
-        
+
         // Ruby ou CoffeeScript:
         //"#{nome} possui #{flechas} #{textoFlechas} e #{experiencia} #{textoNiveis} de experiência."
-        
+
         // C# 6:
         //"\{nome} possui \{flechas} \{textoFlechas} e \{experiencia} \{textoNiveis} de experiência."
-        
+
         return String.format("%s possui %d %s e %d %s de experiência.",
             this.nome,
             this.flechas,

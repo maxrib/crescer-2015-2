@@ -1,59 +1,36 @@
 
 
-public class Orc
+public class Orc extends Personagem
 {
-    private int vida;
-    private Inventario inventario;
-    private Status status;
-    private TipoOrc tipoOrc;
 
-    public Orc(TipoOrc tipoOrc)
-    {
-        this.inventario = new Inventario();
-        this.tipoOrc = tipoOrc;
-        gerarVidaInicial();
-        gerarInventario();
-        this.status = Status.VIVO;
+    public Orc(){
     }
     
-    public void levarAtaqueDeAnao() {
+    public void levarAtaque() {
         
-        if(getItem("Escudo Uruk-Hai") == null){
-            perderVida(10);
+        int dano = getItem("Escudo Uruk-Hai") == null ? 10 : 6;
+        perderVida(dano);
+    }
+    
+    public void atacar(Personagem personagem){
+        
+        boolean podeAtacarComEspada = podeAtacarComEspada();
+        boolean podeAtacarComArco = podeAtacarComArco();
+        
+        if(podeAtacarComEspada || podeAtacarComArco){
+            personagem.receberAtaqueDoOrc(this);
+            
+            if(!podeAtacarComEspada) {
+                debitarFlecha();
+            }
         }
         else {
-            perderVida(5);
+            status = Status.FUGINDO;
         }
     }
     
-    public void levarAtaqueDeElfo() {
-        perderVida(8);
-    }
-    
-    public void atacarAnao(Dwarf anao){
-        if(podeAtacarComEspada()){
-            anao.receberAtaqueDoOrc(this);
-        }
-        else if(podeAtacarComArco()) {
-            anao.receberAtaqueDoOrc(this);
-            debitarFlecha();
-        }
-        else {
-            this.status = Status.FUGINDO;
-        }
-    }
-    
-    public void atacarElfo(Elfo elfo){
-        if(podeAtacarComEspada()){
-            elfo.receberAtaqueDoOrc(this);
-        }
-        else if(podeAtacarComArco()) {
-            elfo.receberAtaqueDoOrc(this);
-            debitarFlecha();
-        }
-        else {
-            this.status = Status.FUGINDO;
-        }
+    public void receberAtaqueDoOrc(Orc orc) {
+        this.levarAtaque();
     }
     
     public int getDanoDeAtaque(){
@@ -68,23 +45,11 @@ public class Orc
         return 0;
     }
     
-    public int getVida(){
-        return this.vida;
-    }
-    
-    public Inventario getInventario(){
-        return this.inventario;
-    }
-    
-    public Status getStatus(){
-        return this.status;
-    }
-    
     private void debitarFlecha() {
         Item flecha = getItem("Flecha");
         
         if(flecha.getQuantidade() == 1){
-            this.inventario.perderItem(flecha);
+            perderItem(flecha);
         }
         else {
             flecha.debitarUmaUnidade();
@@ -104,43 +69,18 @@ public class Orc
     }
     
     private void perderVida(int qtdVidaPerdida) {
-        this.vida -= qtdVidaPerdida;
+        vida -= qtdVidaPerdida;
+        definirStatusComBaseNaVida();
+    }
+    
+    private void definirStatusComBaseNaVida(){
         
-        if(vida <= 0){
-            vida = 0;
-            this.status = Status.MORTO;
-        }
-        else {
-            this.status = Status.FERIDO;
-        }
+        super.status = vida <= 0 ? Status.MORTO : Status.FERIDO;
     }
     
     private Item getItem(String descricao){
         return this.inventario.getItemPorDescricao(descricao);
     }
     
-    private void gerarInventario() {
-        if(this.tipoOrc == TipoOrc.URUKHAI) {
-            Item escudoUrukHai = new Item(1, "Escudo Uruk-Hai");
-            Item espada = new Item(1, "Espada");
-            this.inventario.adicionarItem(escudoUrukHai);
-            this.inventario.adicionarItem(espada);
-        }
-        else if(this.tipoOrc == TipoOrc.SNAGA){
-            Item arco = new Item(1, "Arco");
-            Item flechas = new Item(5, "Flecha");
-            this.inventario.adicionarItem(arco);
-            this.inventario.adicionarItem(flechas);
-        }
-    }
-    
-    private void gerarVidaInicial() {
-        if(this.tipoOrc == TipoOrc.URUKHAI) {
-            this.vida = 150;
-        }
-        else if(this.tipoOrc == TipoOrc.SNAGA){
-            this.vida = 70;
-        }
-    }
     
 }

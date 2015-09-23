@@ -45,7 +45,7 @@ public class Elfo extends Personagem{
     }
     
     public void atacarOrc(Orc orc){
-        orc.levarAtaqueDeElfo();
+        orc.levarAtaque();
     }
     
     /*

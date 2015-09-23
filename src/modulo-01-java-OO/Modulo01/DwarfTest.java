@@ -243,30 +243,30 @@ public class DwarfTest
     
     @Test
     public void dwarfRecebeEspadadaDoOrcUrukHai(){
-        Orc orc = new Orc(TipoOrc.URUKHAI);
+        Orc orc = new UrukHai();
         Dwarf dwarf = new Dwarf();
         
-        orc.atacarAnao(dwarf);
+        orc.atacar(dwarf);
         
         assertEquals(98, dwarf.getVida());
     }
     
     @Test
     public void dwarfRecebeFlechadaDoOrcSnaga(){
-        Orc orc = new Orc(TipoOrc.SNAGA);
+        Orc orc = new Snaga();
         Dwarf dwarf = new Dwarf();
         
-        orc.atacarAnao(dwarf);
+        orc.atacar(dwarf);
         
         assertEquals(102, dwarf.getVida());
     }
     
     @Test
     public void dwarfMataOrcUrukHai(){
-        Orc orc = new Orc(TipoOrc.URUKHAI);
+        Orc orc = new UrukHai();
         Dwarf dwarf = new Dwarf();
         
-        int golpesAteMatarOrc = 29;
+        int golpesAteMatarOrc = 24;
         
         for(int i = 0; i < golpesAteMatarOrc; i++){
             dwarf.atacarOrc(orc);
@@ -278,7 +278,7 @@ public class DwarfTest
     
     @Test
     public void dwarfMataOrcSnaga(){
-        Orc orc = new Orc(TipoOrc.SNAGA);
+        Orc orc = new Snaga();
         Dwarf dwarf = new Dwarf();
         
         int golpesAteMatarOrc = 6;

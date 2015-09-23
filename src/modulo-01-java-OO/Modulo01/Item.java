@@ -1,6 +1,6 @@
 public class Item
 {
-    private String descricao;
+    private final String descricao;
     private int quantidade;
     
     public Item(int quantidade, String descricao) {
@@ -39,6 +39,7 @@ public class Item
     }
     */
 
+    @Override
     public boolean equals(Object obj) {
         Item outro = (Item)obj;
         return this.descricao.equals(outro.getDescricao()) && this.quantidade == outro.getQuantidade();

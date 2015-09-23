@@ -22,6 +22,12 @@ public class ElfoTest
         Elfo legolas = new Elfo("Legolas");
         assertEquals(Status.VIVO, legolas.getStatus());
     }
+    
+    @Test
+    public void elfoNasceComInventarioVazio() {
+        Elfo legolas = new Elfo("Legolas");
+        assertEquals(new Inventario(), legolas.getInventario());
+    }
 
     @Test
     public void elfoCriadoNasceCom0DeExperiencia() {
@@ -140,20 +146,20 @@ public class ElfoTest
     
     @Test
     public void elfoRecebeEspadadaDoOrcUrukHai(){
-        Orc orc = new Orc(TipoOrc.URUKHAI);
+        Orc orc = new UrukHai();
         Elfo elfo = new Elfo(null);
         
-        orc.atacarElfo(elfo);
+        orc.atacar(elfo);
         
         assertEquals(68, elfo.getVida());
     }
     
     @Test
     public void elfoRecebeFlechadaDoOrcSnaga(){
-        Orc orc = new Orc(TipoOrc.SNAGA);
+        Orc orc = new Snaga();
         Elfo elfo = new Elfo(null);
         
-        orc.atacarElfo(elfo);
+        orc.atacar(elfo);
         
         assertEquals(72, elfo.getVida());
     }

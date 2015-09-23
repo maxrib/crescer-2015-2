@@ -1,10 +1,19 @@
 public class Orc{
     
-    private int vida;
-    private Inventario inventario = new Inventario();
-    private Status status;
-    private TipoOrc tipoOrc;
+    protected int vida;
+    protected Inventario inventario = new Inventario();
+    protected Status status;
+    protected TipoOrc tipoOrc;
 
+    protected Orc()
+    {
+        this.inventario = new Inventario();
+        this.tipoOrc = tipoOrc;
+        gerarVidaInicial();
+        gerarInventario();
+        this.status = Status.VIVO;
+    }
+    
     public Orc(TipoOrc tipoOrc)
     {
         this.inventario = new Inventario();
@@ -14,18 +23,14 @@ public class Orc{
         this.status = Status.VIVO;
     }
     
-    public void levarAtaqueDeAnao() {
+    public void levarAtaque() {
         
         if(getItem("Escudo Uruk-Hai") == null){
             perderVida(10);
         }
         else {
-            perderVida(5);
+            perderVida(6);
         }
-    }
-    
-    public void levarAtaqueDeElfo() {
-        perderVida(8);
     }
     
     public void atacarAnao(Dwarf anao){
@@ -117,7 +122,7 @@ public class Orc{
         return this.inventario.getItemPorDescricao(descricao);
     }
     
-    private void gerarInventario() {
+    protected void gerarInventario() {
         if(this.tipoOrc == TipoOrc.URUKHAI) {
             Item escudoUrukHai = new Item(1, "Escudo Uruk-Hai");
             Item espada = new Item(1, "Espada");
@@ -132,7 +137,7 @@ public class Orc{
         }
     }
     
-    private void gerarVidaInicial() {
+    protected void gerarVidaInicial() {
         if(this.tipoOrc == TipoOrc.URUKHAI) {
             this.vida = 150;
         }
