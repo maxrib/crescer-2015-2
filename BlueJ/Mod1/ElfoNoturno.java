@@ -14,8 +14,11 @@ public class ElfoNoturno extends Elfo {
         super.atirarFlecha(dwarf);
         this.experiencia+=2;
         
-        double novaVida = this.vida*0.95;
-        
+        double novaVida = this.vida*0.95;        
         this.vida = (int)novaVida;
+        
+        if(this.vida==0)
+            this.status = Status.MORTO;
+            
     }
 }
