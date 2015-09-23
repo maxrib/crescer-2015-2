@@ -147,7 +147,6 @@ public class DwarfTest
         assertEquals(0, gimli.getVida());
     }
 
-<<<<<<< HEAD
     @Test
     public void gerarNumeroAnoBissextoVidaEntre80e90() {
         // Arrange
@@ -292,7 +291,4 @@ public class DwarfTest
         dwarf.atacarOrc(orc);
         assertEquals(Status.MORTO, orc.getStatus());
     }
-
-=======
->>>>>>> f35c690e738777726243a049a998c692e6f5203d
 }

@@ -2,17 +2,7 @@ public class Item
 {
     private String descricao;
     private int quantidade;
-<<<<<<< HEAD
-
-    /**
-     * Cria um item de inventário com a quantidade e descrição informadas
-     * 
-     * @param quantidade Quantidade de unidades no inventário
-     * @param descricao Descrição do item
-     */
-=======
     
->>>>>>> f35c690e738777726243a049a998c692e6f5203d
     public Item(int quantidade, String descricao) {
         this.quantidade = quantidade;
         this.descricao = descricao;
@@ -26,7 +16,6 @@ public class Item
         return this.quantidade;
     }
     
-<<<<<<< HEAD
     public void debitarUmaUnidade(){
         if(this.quantidade > 0){
             this.quantidade--;
@@ -34,9 +23,6 @@ public class Item
     }
 
     public void aumentar1000Unidades() {
-=======
-    public void aumentar1000Unidades(){
->>>>>>> f35c690e738777726243a049a998c692e6f5203d
         this.quantidade += 1000;
     }
 

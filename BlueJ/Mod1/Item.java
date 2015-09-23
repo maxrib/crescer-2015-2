@@ -1,36 +1,53 @@
-public class Item{
-    public String desc;
-    int qtd;
-    
-    public Item(String desc,int qtd){
-        this.desc=desc;
-        this.qtd=qtd;
+public class Item
+{
+    private String descricao;
+    private int quantidade;
+
+    /**
+     * Cria um item de inventário com a quantidade e descrição informadas
+     * 
+     * @param quantidade Quantidade de unidades no inventário
+     * @param descricao Descrição do item
+     */
+    public Item(int quantidade, String descricao) {
+        this.quantidade = quantidade;
+        this.descricao = descricao;
+    }
+
+    public String getDescricao() {
+        return this.descricao;
+    }
+
+    public int getQuantidade() {
+        return this.quantidade;
     }
     
-    public Item(String desc){
-        this.desc=desc;
-        this.qtd=1;
-    }
-    
-    public String getDesc(){
-        return this.desc;
-    }
-    
-    public int getQtd(){
-        return this.qtd;
-    }
-    
-    public void aumentar1000Unidades(){
-        this.qtd += 1000;
-    }
-    
-    public void aumentarUnidadesIrishDwarf(){
-        int soma=0;
-        
-        for(int c=0;c<=this.qtd;c++){
-            soma = soma + c;
+    public void debitarUmaUnidade(){
+        if(this.quantidade > 0){
+            this.quantidade--;
         }
-        
-        this.qtd = 1000 + soma;
+    }
+
+    public void aumentar1000Unidades() {
+        this.quantidade += 1000;
+    }
+
+    public void aumentarQuantidadesComSomatorio() {
+        int pa = this.quantidade * (this.quantidade+1) / 2;
+        this.quantidade += 1000 * pa;
+    }
+
+    /*
+     * Exercício de refatoração:
+    public void shimbalaie() {
+        int pa = this.quantidade * (this.quantidade+1) / 2;
+        this.quantidade += 1000*pa;
+    }
+    */
+
+    @Override
+    public boolean equals(Object obj) {
+        Item outro = (Item)obj;
+        return this.descricao.equals(outro.getDescricao()) && this.quantidade == outro.getQuantidade();
     }
 }

@@ -1,8 +1,4 @@
 public class Dwarf {
-    private String nome;
-    private int vida, experiencia;
-    private Status status;
-    private DataTerceiraEra dataNascimento;
     
     protected String nome;
     protected int vida, experiencia;
@@ -44,7 +40,26 @@ public class Dwarf {
         }
     }
     
-<<<<<<< HEAD
+    public double gerarNumero(){
+        double x=101.0;
+        
+        if(dataNascimento.ehBissexto() && this.vida >= 80 && this.vida <=90){
+            x *= -33;
+        }
+        
+        if(dataNascimento.ehBissexto() && (this.nome.equals("Leprechaun"))){
+            x *= -33;
+        }
+        
+        if(!dataNascimento.ehBissexto() 
+            && (this.nome.equals("Seixas") 
+            || this.nome.equals("Meireles"))){
+                x = x * 33 % 100;
+        }
+        
+        return x;
+    }
+    
     public void receberAtaqueDoOrc(Orc orc){
         int danoCausado = orc.getDanoDeAtaque();
         this.vida -= danoCausado;
@@ -54,8 +69,6 @@ public class Dwarf {
         orc.levarAtaqueDeAnao();
     }
 
-=======
->>>>>>> f35c690e738777726243a049a998c692e6f5203d
     public int getVida() {
         return this.vida;
     }

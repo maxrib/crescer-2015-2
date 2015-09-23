@@ -41,16 +41,6 @@ public class Inventario {
         }
     }
     
-    public void aumentarUnidadesIrishDwarf(){
-        int soma=0;
-        
-        for(int c=0;c<=this.qu;c++){
-            soma += c;
-        }
-        
-        this.quantidade = 1000*soma + this.quantidade;
-    }
-    
     public Item getItemComMaiorQuantidade() {
         int indice = 0, maiorQtd = 0;
         
