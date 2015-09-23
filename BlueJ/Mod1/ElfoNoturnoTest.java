@@ -30,4 +30,20 @@ public class ElfoNoturnoTest {
         assertEquals(15,elfo.getExperiencia());
         assertEquals(76,elfo.getVida());
     }
+    
+    @Test
+    public void elfoNoturnoMorreComVariasFlechas(){
+        ElfoNoturno elfo = new ElfoNoturno("elfo");
+        Dwarf dwarf = new Dwarf("dwarf");
+        
+        double novaVida = elfo.getVida();
+        
+        while(elfo.getVida()!=0){
+            elfo.atirarFlecha(dwarf);
+        }
+        
+        assertEquals(0,elfo.getVida());
+        assertEquals(Status.MORTO,elfo.getStatus());
+    }
+    
 }
