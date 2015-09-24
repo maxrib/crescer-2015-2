@@ -32,8 +32,8 @@ public class Elfo extends Personagem {
         this(nome, 42);
     }
     
-    public int getQtdElfos(){
-        return this.contaElfo;
+    public static int getQtdElfos(){
+        return contaElfo;
     }
     
     /* PascalCase (C#, VB.NET)
