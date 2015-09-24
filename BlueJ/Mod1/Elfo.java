@@ -3,7 +3,7 @@
  */
 public class Elfo extends Personagem {
     private int flechas;
-    private static int contaElfo= 0;
+    protected static int contaElfo= 0;
 
     /* Type initializer
      * Executa antes de cada construtor

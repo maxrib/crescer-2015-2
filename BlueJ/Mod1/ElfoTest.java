@@ -164,8 +164,23 @@ public class ElfoTest
         assertEquals(92, elfo.getVida());
     }
     
+    @Test
+    public void contaElfosCriados(){
+        Elfo.contaElfo = 0;
+        Elfo elfo = new Elfo("Matusalem");
+        assertEquals(1,elfo.getQtdElfos());
+    }
     
-    
-    
+    public void conta5ElfosCriados(){
+        Elfo.contaElfo = 0;
+        
+        Elfo elfo = new Elfo("Jeremias");
+        Elfo verde = new ElfoVerde("Verde");
+        Elfo noturno = new ElfoNoturno("Noturno");
+        ElfoNoturno elno = new ElfoNoturno("elno");
+        ElfoVerde elve = new ElfoVerde("elve");
+        
+        assertEquals(5,elfo.getQtdElfos());
+    }
     
 }
