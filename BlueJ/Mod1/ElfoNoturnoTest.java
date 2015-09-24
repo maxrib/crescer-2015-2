@@ -21,10 +21,7 @@ public class ElfoNoturnoTest {
         
         double novaVida = elfo.getVida();
         
-        elfo.atirarFlecha(dwarf);
-        elfo.atirarFlecha(dwarf);
-        elfo.atirarFlecha(dwarf);
-        elfo.atirarFlecha(dwarf);
+        for(int c=0;c<5;c++)
         elfo.atirarFlecha(dwarf);
         
         assertEquals(15,elfo.getExperiencia());
@@ -36,11 +33,8 @@ public class ElfoNoturnoTest {
         ElfoNoturno elfo = new ElfoNoturno("elfo");
         Dwarf dwarf = new Dwarf("dwarf");
         
-        double novaVida = elfo.getVida();
-        
-        while(elfo.getVida()!=0){
+        while(elfo.getVida()!=0)
             elfo.atirarFlecha(dwarf);
-        }
         
         assertEquals(0,elfo.getVida());
         assertEquals(Status.MORTO,elfo.getStatus());
