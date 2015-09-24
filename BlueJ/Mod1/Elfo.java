@@ -3,6 +3,7 @@
  */
 public class Elfo extends Personagem {
     private int flechas;
+    private static int contaElfo= 0;
 
     /* Type initializer
      * Executa antes de cada construtor
@@ -15,6 +16,7 @@ public class Elfo extends Personagem {
         this.flechas = flechas;
         this.status = Status.VIVO;
         this.vida = 100;
+        this.contaElfo++;
     }
 
     /* Apenas para elucidar as diferenças entre int X Integer, esta duplicação não faz sentido.
@@ -29,7 +31,11 @@ public class Elfo extends Personagem {
     public Elfo(String nome) {
         this(nome, 42);
     }
-
+    
+    public int getQtdElfos(){
+        return this.contaElfo;
+    }
+    
     /* PascalCase (C#, VB.NET)
      *      public void AtirarFlechaDeFogo
      * camelCase (Java, JavaScript)
