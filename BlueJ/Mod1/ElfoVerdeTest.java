@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class ElfoVerdeTest
 {
+    
     @Test
     public void elfoVerdeAtacaUmDwarf() {
         ElfoVerde green = new ElfoVerde("Fandango");
@@ -12,7 +13,7 @@ public class ElfoVerdeTest
 
         assertEquals(2, green.getExperiencia());
     }
-
+    
     @Test
     public void elfoVerdeAtacaUmDwarfEIrishDwarf() {
         ElfoVerde green = new ElfoVerde("Green Elf");
@@ -59,6 +60,5 @@ public class ElfoVerdeTest
         esperado.adicionarItem(new Item(1, "Arco e Flecha de Vidro"));
         assertEquals(esperado, sortudo.getInventario());
     }
-
     
 }
