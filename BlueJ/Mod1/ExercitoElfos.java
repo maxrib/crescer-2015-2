@@ -7,7 +7,8 @@ public class ExercitoElfos {
     private HashMap<Status,ArrayList<Elfo>> statusElfo = new HashMap<>();
 
     public void alistarElfo(Elfo elfo){
-        boolean podeAlistar = elfo instanceof ElfoVerde || elfo instanceof ElfoNoturno;
+        boolean podeAlistar = elfo instanceof ElfoVerde 
+            || elfo instanceof ElfoNoturno;
         
         if(podeAlistar)
         this.exercitoElfos.put(elfo.getNome(),elfo);
@@ -45,6 +46,10 @@ public class ExercitoElfos {
         }
         //ArrayList<Elfo> exibir = statusElfo.get(statusElfo);            
         //return exibir;
+    }
+    
+    public ArrayList<Elfo> pesquisarElfo(Status status) {
+        return this.statusElfo.get(status);
     }
 
 }
