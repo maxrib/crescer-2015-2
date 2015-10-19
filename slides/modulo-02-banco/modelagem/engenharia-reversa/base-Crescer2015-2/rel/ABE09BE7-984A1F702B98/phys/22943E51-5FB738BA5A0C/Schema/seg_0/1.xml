@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="dbo" directorySegmentName="seg_0" id="1">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Crescer15_2</sourceObjSchema>
+<sourceObjName>dbo</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<owner>379CF8F1-A635-AD33-FCC0-4F1A14D00C55_dbo</owner>
+<database>379CF8F1-A635-AD33-FCC0-4F1A14D00C55</database>
+<uid>1</uid>
+</SchemaSqlServerv2k5>

@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Produto" directorySegmentName="seg_0" id="44A15164-E389-4503-4837-EAC71319D5F9">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<database>379CF8F1-A635-AD33-FCC0-4F1A14D00C55</database>
+<filegroup>63FD6539-865A-7069-0944-782332639B20</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="Situacao" id="231E22E1-75A9-6A79-A033-4E579DCD17DF">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<collation>SQL_Latin1_General_CP1_CI_AS</collation>
+<defaultValue>A</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="PrecoCusto" id="3B73AE43-2231-98A2-A037-CE5AE6E78E2A">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="PrecoVenda" id="6B6F1700-2F1C-26D4-BFFB-48E33EF0AF96">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="IDProduto" id="74D06F21-688D-8049-B440-1137F149FC6D">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="Nome" id="A677FC03-C8F1-2D7E-4248-807819ABFAD3">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<collation>SQL_Latin1_General_CP1_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="DataCadastro" id="AAD061E0-56CB-AACA-E969-5F98C219AFFD">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<defaultValue>getdate()</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK_Produto" id="66E0A7E6-FC41-44F4-6D4D-FB73AD163F62">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>63FD6539-865A-7069-0944-782332639B20</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.sqlserver.v2k8.StorageDesignSqlServerv2k8>
+   <object objectType="DataBase" objectID="379CF8F1-A635-AD33-FCC0-4F1A14D00C55" name="Crescer15_2" seqName="seg_0"/>
+   <object objectType="Role" objectID="DB_NULLELEMENT_PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="Role" objectID="379CF8F1-A635-AD33-FCC0-4F1A14D00C55_PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="User" objectID="DB_NULLELEMENT_dbo" name="dbo" seqName="seg_0"/>
+   <object objectType="User" objectID="379CF8F1-A635-AD33-FCC0-4F1A14D00C55_dbo" name="dbo" seqName="seg_0"/>
+   <object objectType="Schema" objectID="1" name="dbo" seqName="seg_0"/>
+   <object objectType="Table" objectID="0FC3811E-7C24-101E-440D-5423029BBD33" name="Material" seqName="seg_0"/>
+   <object objectType="Table" objectID="3BC8A599-2AB1-EEE8-048A-0349B2510A5B" name="PedidoItem" seqName="seg_0"/>
+   <object objectType="Table" objectID="44236E6B-315E-F6A4-D585-F3C88F0712DD" name="Cidade" seqName="seg_0"/>
+   <object objectType="Table" objectID="44A15164-E389-4503-4837-EAC71319D5F9" name="Produto" seqName="seg_0"/>
+   <object objectType="Table" objectID="77AEFB41-EE95-07C5-0AC1-2F00DB9B13B5" name="Cliente" seqName="seg_0"/>
+   <object objectType="Table" objectID="94354BBF-35B9-4E41-4B1F-48992A9F3D3F" name="ProdutoMaterial" seqName="seg_0"/>
+   <object objectType="Table" objectID="B7E0A0B8-5F14-AD31-4AE7-CD595B4BFCC1" name="Pedido" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.sqlserver.v2k8.StorageDesignSqlServerv2k8>

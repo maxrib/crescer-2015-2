@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Pedido" directorySegmentName="seg_0" id="B7E0A0B8-5F14-AD31-4AE7-CD595B4BFCC1">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<database>379CF8F1-A635-AD33-FCC0-4F1A14D00C55</database>
+<filegroup>63FD6539-865A-7069-0944-782332639B20</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="ValorPedido" id="0FA7E35F-DA16-5A63-D7DE-C7F89C4E8BC2">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="DataPedido" id="50AE6EB0-8651-3C64-F9CA-F62DB5EB7C1F">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<defaultValue>getdate()</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="Situacao" id="C054D04C-9FD6-F9B3-74D6-34D23CAC229D">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<collation>SQL_Latin1_General_CP1_CI_AS</collation>
+<defaultValue>A</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="DataEntrega" id="C1D4282F-E9FB-A532-1E05-9BF5DEB104D3">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="IDCliente" id="E85BBB3F-F15C-3D4D-6212-2C43ED40D6E5">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="IDPedido" id="F99FA2BE-E0F1-D3D9-575F-14D45E2F39D8">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="FK_Pedido_Cliente" id="1D891C66-2D14-4DE2-5C61-7D42FC40DE43">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK_Pedido" id="8F80B2D0-CDF5-0242-7721-E370998721DA">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>63FD6539-865A-7069-0944-782332639B20</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

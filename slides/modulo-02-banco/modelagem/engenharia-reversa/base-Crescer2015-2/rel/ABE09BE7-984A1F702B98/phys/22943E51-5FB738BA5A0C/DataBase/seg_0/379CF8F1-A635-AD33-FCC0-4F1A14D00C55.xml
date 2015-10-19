@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataBaseSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataBaseSqlServerv2k5" name="Crescer15_2" directorySegmentName="seg_0" id="379CF8F1-A635-AD33-FCC0-4F1A14D00C55">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjName>Crescer15_2</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<fileGroups>
+<FileGroup class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FileGroupSqlServerv2k5" name="PRIMARY" id="63FD6539-865A-7069-0944-782332639B20">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="DB1_Data.MDF" id="DE79D2F5-3FC5-88DB-5547-CDF401F151AC">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<fileName>c:\program files\microsoft sql server\mssql\data\DB1_Data.MDF</fileName>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="Industrial" id="85998775-83D3-995A-5BD8-2E87A5BACBB5">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<fileName>C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\Crescer152DAT01.mdf</fileName>
+<growthValue>128</growthValue>
+<initialSize>4352</initialSize>
+</DataFile>
+</dataFiles>
+</FileGroup>
+</fileGroups>
+</DataBaseSqlServerv2k5>

@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94354BBF-35B9-4E41-4B1F-48992A9F3D3F" name="ProdutoMaterial">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>ProdutoMaterial</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDProdutoMaterial" id="6A639B4C-6784-BEBC-F927-FF3EDC270644">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>ProdutoMaterial</sourceObjSchema>
+<sourceObjName>IDProdutoMaterial</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDProduto" id="EF12B83F-1989-3B6C-8EA7-3FD36D8F1203">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>ProdutoMaterial</sourceObjSchema>
+<sourceObjName>IDProduto</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>74D06F21-688D-8049-B440-1137F149FC6D</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94134166-6AD4-C0F3-5600-9522FBA6D89C" referredColumn="74D06F21-688D-8049-B440-1137F149FC6D"/>
+</associations>
+</Column>
+<Column name="IDMaterial" id="7402F0F0-456F-3184-50AA-A1EE9EEFE113">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>ProdutoMaterial</sourceObjSchema>
+<sourceObjName>IDMaterial</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>C7C19F2B-2AC1-7393-97C3-54C438ED0C17</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D058541-30A4-99C2-8C34-173B6B89E31E" referredColumn="C7C19F2B-2AC1-7393-97C3-54C438ED0C17"/>
+</associations>
+</Column>
+<Column name="Quantidade" id="81EAE3EB-21DA-C0BF-B85D-CF63AF87382B">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>ProdutoMaterial</sourceObjSchema>
+<sourceObjName>Quantidade</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A31FFF45-616A-6151-5C29-D52FD440EE99" name="PK_ProdutoMaterial">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_ProdutoMaterial</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A639B4C-6784-BEBC-F927-FF3EDC270644"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="296ED26D-658F-B351-B5DF-14C9E3FA7336" name="FK_ProdutoMaterial_Produto">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF12B83F-1989-3B6C-8EA7-3FD36D8F1203"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46A054A4-8493-9CC4-AE50-5C3F4A7D4899" name="FK_ProdutoMaterial_Material">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7402F0F0-456F-3184-50AA-A1EE9EEFE113"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

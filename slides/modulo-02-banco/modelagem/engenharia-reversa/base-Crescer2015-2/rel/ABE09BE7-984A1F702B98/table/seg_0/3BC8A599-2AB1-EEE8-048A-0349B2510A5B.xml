@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BC8A599-2AB1-EEE8-048A-0349B2510A5B" name="PedidoItem">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PedidoItem</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPedidoItem" id="9BF1D25B-17A2-2E21-64DE-07515C02388A">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>PedidoItem</sourceObjSchema>
+<sourceObjName>IDPedidoItem</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDPedido" id="56ED6523-6063-25BD-AB42-26DF20E7A6C5">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>PedidoItem</sourceObjSchema>
+<sourceObjName>IDPedido</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>F99FA2BE-E0F1-D3D9-575F-14D45E2F39D8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D17DF46D-0F1C-33B4-9FDE-DF782B9F7426" referredColumn="F99FA2BE-E0F1-D3D9-575F-14D45E2F39D8"/>
+</associations>
+</Column>
+<Column name="Quantidade" id="9DCDB418-1F2A-B2FA-ABD2-024659D4CB37">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>PedidoItem</sourceObjSchema>
+<sourceObjName>Quantidade</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrecoUnitario" id="35BE6BC0-AD8A-5ACD-02AA-B7ED61B894B7">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>PedidoItem</sourceObjSchema>
+<sourceObjName>PrecoUnitario</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Situacao" id="AB4EE610-51C3-4C7C-F93F-7BA4D8108F47">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>PedidoItem</sourceObjSchema>
+<sourceObjName>Situacao</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>A</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDProduto" id="BF909EDC-DC90-A1DB-3A27-28414BED01DB">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>PedidoItem</sourceObjSchema>
+<sourceObjName>IDProduto</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>74D06F21-688D-8049-B440-1137F149FC6D</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1F05E60-383F-314A-49A5-B3584F03960D" referredColumn="74D06F21-688D-8049-B440-1137F149FC6D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AFEE17F7-E767-5301-D39D-C7636E056AE8" name="PK_PedidoItem">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_PedidoItem</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BF1D25B-17A2-2E21-64DE-07515C02388A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A52C06F-DD78-18C9-2C3A-20BA92CA9267" name="FK_PedidoItem_Pedido">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56ED6523-6063-25BD-AB42-26DF20E7A6C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2132A697-EF0A-2D42-EC83-74B3AA8E1D2E" name="FK_PedidoItem_Produto">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF909EDC-DC90-A1DB-3A27-28414BED01DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CC_PedidoItem_Situacao" directorySegmentName="seg_0" id="7B62BAC3-D3C3-B309-F481-B667508E5852">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>CC_PedidoItem_Situacao</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>[Situacao]=&apos;I&apos; OR [Situacao]=&apos;Q&apos; OR [Situacao]=&apos;C&apos; OR [Situacao]=&apos;A&apos;</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CC_PedidoItem_Quantidade" directorySegmentName="seg_0" id="55B8CBE0-B26B-4330-0231-0B27FCE82C57">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>CC_PedidoItem_Quantidade</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>[Quantidade]&gt;(0)</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DF__PedidoIte__Situa__4222D4EF" directorySegmentName="seg_0" id="BB9DAF9D-C756-741C-7BEA-464960B27512">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF__PedidoIte__Situa__4222D4EF</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>&apos;A&apos;</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

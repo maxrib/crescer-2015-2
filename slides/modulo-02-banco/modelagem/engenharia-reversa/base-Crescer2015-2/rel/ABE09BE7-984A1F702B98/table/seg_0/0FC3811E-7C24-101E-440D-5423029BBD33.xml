@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FC3811E-7C24-101E-440D-5423029BBD33" name="Material">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Material</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDMaterial" id="C7C19F2B-2AC1-7393-97C3-54C438ED0C17">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Material</sourceObjSchema>
+<sourceObjName>IDMaterial</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descricao" id="83AB9C03-34DE-3A2D-447B-B1F4D578543F">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Material</sourceObjSchema>
+<sourceObjName>Descricao</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PesoLiquido" id="AB30CF09-739A-5544-A1CE-1C45C24E0042">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Material</sourceObjSchema>
+<sourceObjName>PesoLiquido</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrecoCusto" id="1FD8C24C-828A-22BD-F7B3-197366AFB167">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Material</sourceObjSchema>
+<sourceObjName>PrecoCusto</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C78E7190-7F26-AD28-295A-640B2D500540" name="PK_Material">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_Material</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7C19F2B-2AC1-7393-97C3-54C438ED0C17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

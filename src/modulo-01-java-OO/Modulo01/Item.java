@@ -3,6 +3,17 @@ public class Item
     private final String descricao;
     private int quantidade;
     
+    // C#
+    // public int Quantidade { get; protected set; }
+    // new Item().Quantidade
+    // item.Quantidade = 14;
+
+    /**
+     * Cria um item de inventário com a quantidade e descrição informadas
+     * 
+     * @param quantidade Quantidade de unidades no inventário
+     * @param descricao Descrição do item
+     */
     public Item(int quantidade, String descricao) {
         this.quantidade = quantidade;
         this.descricao = descricao;
@@ -42,6 +53,7 @@ public class Item
     @Override
     public boolean equals(Object obj) {
         Item outro = (Item)obj;
+        //return this.descricao.equals(((Item)obj).getDescricao()) && ;
         return this.descricao.equals(outro.getDescricao()) && this.quantidade == outro.getQuantidade();
     }
 }

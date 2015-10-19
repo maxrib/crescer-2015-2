@@ -17,12 +17,12 @@ public class SnagaTest
     public void criaSnaga(){
         Orc orc = new Snaga();
         
-        int vidaEsperada = 70;
+        double vidaEsperada = 70;
         Inventario inventarioEsperado = new Inventario();
         inventarioEsperado.adicionarItem(new Item(1, "Arco"));
         inventarioEsperado.adicionarItem(new Item(5, "Flecha"));
         
-        assertEquals(vidaEsperada, orc.getVida());
+        assertEquals(vidaEsperada, orc.getVida(), 0.0);
         assertEquals(inventarioEsperado, orc.getInventario());
     }
     
@@ -32,7 +32,7 @@ public class SnagaTest
         
         orc.levarAtaque();
         
-        assertEquals(60, orc.getVida());
+        assertEquals(60, orc.getVida(), 0.0);
     }
     
     @Test
@@ -69,18 +69,18 @@ public class SnagaTest
         
         orc.levarAtaque();
         
-        assertEquals(64, orc.getVida());
+        assertEquals(64, orc.getVida(), 0.0);
     }
     
     @Test
     public void orcSnagaCausa8DeDanoEmElfoPorqueAtacouComArco(){
         Orc orc = new Snaga();
         Elfo legolas = new Elfo("Legolas");
-        int vidaEsperada = 72;
+        double vidaEsperada = 92;
         
         orc.atacar(legolas);
         
-        assertEquals(vidaEsperada, legolas.getVida());
+        assertEquals(vidaEsperada, legolas.getVida(), 0.0);
     }
     
     @Test
@@ -88,11 +88,11 @@ public class SnagaTest
         Orc orc = new Snaga();
         orc.adicionarItem(new Item(1, "Espada"));
         Elfo legolas = new Elfo("Legolas");
-        int vidaEsperada = 68;
+        double vidaEsperada = 88;
         
         orc.atacar(legolas);
         
-        assertEquals(vidaEsperada, legolas.getVida());
+        assertEquals(vidaEsperada, legolas.getVida(), 0.0);
     }
     
     @Test
@@ -101,12 +101,12 @@ public class SnagaTest
         orc.perderItem(new Item(1, "Arco"));
         orc.perderItem(new Item(5, "Flecha"));
         Elfo legolas = new Elfo("Legolas");
-        int vidaEsperada = 80;
+        double vidaEsperada = 100;
         
         orc.atacar(legolas);
         
         assertEquals(Status.FUGINDO, orc.getStatus());
-        assertEquals(vidaEsperada, legolas.getVida());
+        assertEquals(vidaEsperada, legolas.getVida(), 0.0);
     }
     
     @Test
@@ -116,7 +116,7 @@ public class SnagaTest
         
         snaga.receberAtaqueDoOrc(urukHai);
         
-        assertEquals(60, snaga.getVida());
+        assertEquals(60, snaga.getVida(), 0.0);
     }
     
     @Test
@@ -126,7 +126,7 @@ public class SnagaTest
         
         snagaAlvo.receberAtaqueDoOrc(snagaAtacante);
         
-        assertEquals(60, snagaAlvo.getVida());
+        assertEquals(60, snagaAlvo.getVida(), 0.0);
     }
     
 }

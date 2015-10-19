@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77AEFB41-EE95-07C5-0AC1-2F00DB9B13B5" name="Cliente">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Cliente</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCliente" id="59915861-39FC-A307-630B-4718424E0478">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>IDCliente</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="4B9BC645-040C-57A4-4094-21CF49DF4D8D">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>Nome</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RazaoSocial" id="49159CF0-F25E-D976-7A60-CEE69E26458A">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>RazaoSocial</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco" id="4394EFA2-AC3D-1893-7D25-1015FF7BAF68">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>Endereco</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>35</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>35</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bairro" id="80BA789A-681E-F08D-8E16-C26E2D6AD14F">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>Bairro</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCidade" id="CF975C0D-C9E8-2135-2210-BC2A23AED562">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>IDCidade</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>196B9230-DB06-2D4E-510F-2BF8922E576C</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD9912C8-BE5E-9051-55D7-DD65FA10029C" referredColumn="196B9230-DB06-2D4E-510F-2BF8922E576C"/>
+</associations>
+</Column>
+<Column name="CEP" id="B8F6E3A8-5188-BE98-2462-BB23CA4861A7">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>CEP</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Situacao" id="9B029910-64A3-7DBD-4642-A59B1CB445BF">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Cliente</sourceObjSchema>
+<sourceObjName>Situacao</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>A</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9511E00-D510-DFC4-7364-0FFFB65BB249" name="PK_Cliente">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_Cliente</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59915861-39FC-A307-630B-4718424E0478"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A88C6C7C-8679-FBA3-E5EE-5D0014D08D22" name="FK_Cliente_Cidade">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF975C0D-C9E8-2135-2210-BC2A23AED562"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CC_Cliente_Situacao" directorySegmentName="seg_0" id="6FEA1645-2AC5-5C9A-D660-A24189DB8601">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>CC_Cliente_Situacao</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>[Situacao]=&apos;I&apos; OR [Situacao]=&apos;A&apos;</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DF__Cliente__Situaca__35BCFE0A" directorySegmentName="seg_0" id="DCA875B7-0582-83BF-8783-08ED139D3FA3">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF__Cliente__Situaca__35BCFE0A</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>&apos;A&apos;</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

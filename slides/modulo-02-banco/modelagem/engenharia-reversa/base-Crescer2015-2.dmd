@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="base-Crescer2015-2" id="B169CF61-70B1-273F-527C-99C5668D5F4B" version="3.5">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:10 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B169CF61-70B1-273F-527C-99C5668D5F4B</designId>
+</OSDM_Design>

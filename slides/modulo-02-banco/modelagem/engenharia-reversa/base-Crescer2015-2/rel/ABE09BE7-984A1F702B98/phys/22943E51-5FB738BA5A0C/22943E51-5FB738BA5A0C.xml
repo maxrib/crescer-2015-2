@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignSqlServerv2k8 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k8.StorageDesignSqlServerv2k8" name="SQL Server 2008" id="C493F838-CBCD-0337-2AB1-B45F676326AC" siteID="22943E51-0387-1F2A-CED9-5FB738BA5A0C" siteName="SQL Server 2008" siteType="12">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:31 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+</StorageDesignSqlServerv2k8>

@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7E0A0B8-5F14-AD31-4AE7-CD595B4BFCC1" name="Pedido">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Pedido</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<schemaObject>CFBBDCCF-FC7F-CD96-691D-8EE2C28003BA</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPedido" id="F99FA2BE-E0F1-D3D9-575F-14D45E2F39D8">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Pedido</sourceObjSchema>
+<sourceObjName>IDPedido</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCliente" id="E85BBB3F-F15C-3D4D-6212-2C43ED40D6E5">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Pedido</sourceObjSchema>
+<sourceObjName>IDCliente</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<delegate>59915861-39FC-A307-630B-4718424E0478</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6FDC428B-0C28-19A8-CC7D-7396061EBD89" referredColumn="59915861-39FC-A307-630B-4718424E0478"/>
+</associations>
+</Column>
+<Column name="DataPedido" id="50AE6EB0-8651-3C64-F9CA-F62DB5EB7C1F">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Pedido</sourceObjSchema>
+<sourceObjName>DataPedido</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<defaultValue>getdate()</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DataEntrega" id="C1D4282F-E9FB-A532-1E05-9BF5DEB104D3">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Pedido</sourceObjSchema>
+<sourceObjName>DataEntrega</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ValorPedido" id="0FA7E35F-DA16-5A63-D7DE-C7F89C4E8BC2">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Pedido</sourceObjSchema>
+<sourceObjName>ValorPedido</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>9</dataTypeSize>
+<defaultValue>0</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Situacao" id="C054D04C-9FD6-F9B3-74D6-34D23CAC229D">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>Pedido</sourceObjSchema>
+<sourceObjName>Situacao</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>A</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F80B2D0-CDF5-0242-7721-E370998721DA" name="PK_Pedido">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_Pedido</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F99FA2BE-E0F1-D3D9-575F-14D45E2F39D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D891C66-2D14-4DE2-5C61-7D42FC40DE43" name="FK_Pedido_Cliente">
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E85BBB3F-F15C-3D4D-6212-2C43ED40D6E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CC_Pedido_Situacao" directorySegmentName="seg_0" id="791505C9-C0D8-918C-C7C2-52DADE9F31AA">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>CC_Pedido_Situacao</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>[Situacao]=&apos;I&apos; OR [Situacao]=&apos;Q&apos; OR [Situacao]=&apos;C&apos; OR [Situacao]=&apos;A&apos;</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CC_Pedido_DataEntrega" directorySegmentName="seg_0" id="131EA39D-B8FA-296E-955E-C44976B6B184">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>CC_Pedido_DataEntrega</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>[DataEntrega]&gt;=[DataPedido]</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DF__Pedido__DataPedi__3A81B327" directorySegmentName="seg_0" id="3ECFD27F-0BDB-20E2-3E79-4FCE1D744E65">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF__Pedido__DataPedi__3A81B327</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>getdate()</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DF__Pedido__ValorPed__3B75D760" directorySegmentName="seg_0" id="37555029-3946-EF21-9FA0-803BB4628D92">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF__Pedido__ValorPed__3B75D760</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>(0)</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DF__Pedido__Situacao__3C69FB99" directorySegmentName="seg_0" id="EB7C4BA9-0365-C8FD-C96B-DC408E254558">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>DF__Pedido__Situacao__3C69FB99</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<rule>&apos;A&apos;</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

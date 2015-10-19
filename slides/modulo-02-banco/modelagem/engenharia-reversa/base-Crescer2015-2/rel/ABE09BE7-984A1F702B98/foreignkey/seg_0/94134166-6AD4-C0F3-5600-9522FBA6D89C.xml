@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="94134166-6AD4-C0F3-5600-9522FBA6D89C" name="FK_ProdutoMaterial_Produto">
+<sourceConnName>SQL - Crescer</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>FK_ProdutoMaterial_Produto</sourceObjName>
+<createdBy>andrenunes</createdBy>
+<createdTime>2015-10-02 19:37:36 UTC</createdTime>
+<ownerDesignName>base-Crescer2015-2</ownerDesignName>
+<containerWithKeyObject>94354BBF-35B9-4E41-4B1F-48992A9F3D3F</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>296ED26D-658F-B351-B5DF-14C9E3FA7336</localFKIndex>
+<keyObject>66E0A7E6-FC41-44F4-6D4D-FB73AD163F62</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
