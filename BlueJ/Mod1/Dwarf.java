@@ -69,4 +69,9 @@ public class Dwarf extends Personagem {
             this.inventario.aumentar1000UnidadesEmCadaItem();
         }
     }
+    
+    public static int getQtdAnoes(){
+        return contaAnao;
+    }
+    
 }
