@@ -1,10 +1,12 @@
 public class Dwarf extends Personagem {
     protected DataTerceiraEra dataNascimento;
+    protected static int contaAnao=0;
 
     public Dwarf() {
         this.vida = 110;
         this.status = Status.VIVO;
         this.dataNascimento = new DataTerceiraEra(1,1,1);
+        this.contaAnao++;
     }
 
     public Dwarf(String nome) {
