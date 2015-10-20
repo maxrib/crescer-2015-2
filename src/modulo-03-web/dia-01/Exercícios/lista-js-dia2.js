@@ -24,3 +24,12 @@ function somarPorNacionais(array){
    return total;
 };
 
+//EXERCÍCIO 2B
+function somarPorContinentais(array){
+   var total=0;
+   for(var i=0;i<array.length;i++){
+      total=total+(clubes[i].titulos[1].qtd);
+   }
+   return total;
+};
+
