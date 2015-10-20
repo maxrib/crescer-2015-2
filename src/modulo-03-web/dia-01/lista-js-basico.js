@@ -106,3 +106,22 @@ function queroCafe(mascada, precos) {
     , 'Falhou! ' + elem.mascada + ' ' + elem.precos
   )
 });
+
+var excelis = function(referencia) {
+  referencia = referencia.toUpperCase();
+  for (var i=0, soma=0, len=referencia.length; i < len; i++) {
+    soma = soma * 26 + (referencia.charCodeAt(i) - 64);
+  }
+  return soma;
+};
+
+[
+  { referencia: 'A', esperado: 1 },
+  { referencia: 'a', esperado: 1 },
+  { referencia: 'BA', esperado: 53 }
+].forEach(function(elem) {
+  console.assert(
+    excelis(elem.referencia) === elem.esperado
+    , 'Falhou! ' + elem.referencia
+  )
+});
