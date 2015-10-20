@@ -37,3 +37,15 @@ function imprime(arr,func) {
 	}
 };
 
+//EXERCÍCIO 4
+var fibonacci = function(n){
+	if(n===1) return 1;
+	if(n===2) return 1;
+	return fibonacci(n-1)+fibonacci(n-2);
+};
+
+function fibonaSum(n){
+	if (n===1) return 1;
+	return fibonacci(n)+fibonaSum(n-1);
+}
+
