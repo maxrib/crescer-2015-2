@@ -59,3 +59,14 @@ function excelis(s){
 	return soma;
 };
 
+//EXERCÍCIO 6
+function queroCafe(mascada, precos) {
+  return precos
+    .filter(function(elem) {
+      return elem <= mascada;
+    })
+    .sort(function(elem1, elem2) {
+      return elem1 > elem2;
+    })
+    .join(',');
+};
