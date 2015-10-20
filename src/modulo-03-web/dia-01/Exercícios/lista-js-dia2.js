@@ -34,3 +34,13 @@ function somarPorContinentais(array){
    return total;
 };
 
+//EXERCÍCIO 2C
+function somarPorTodosTitulos(array){
+   var total=0;
+   for(var i=0;i<array.length;i++){
+      for(var c=0;c<array[i].titulos.length;c++){
+         total=total+(array[i].titulos[c].qtd);
+      }
+   }
+   return total;
+}
