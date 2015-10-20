@@ -1,20 +1,21 @@
 //EXERCÍCIO 1A
 function ordenarPorNacionais(array){
-array.sort((a,b)=>a.titulos[0].qtd<b.titulos[0].qtd);
-for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
+   array.sort((a,b)=>a.titulos[0].qtd<b.titulos[0].qtd);
+   for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
 };
 
 //EXERCÍCIO 1B
 function ordenarPorContinentais(array){
-array.sort((a,b)=>a.titulos[1].qtd<b.titulos[1].qtd);
-for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
+   array.sort((a,b)=>a.titulos[1].qtd<b.titulos[1].qtd);
+   for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
 };
 
 //EXERCÍCIO 1C
 function ordenarPorMundiais(array){
-array.sort((a,b)=>a.titulos[2].qtd<b.titulos[2].qtd);
-for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
+   array.sort((a,b)=>a.titulos[2].qtd<b.titulos[2].qtd);
+   for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
 };
+
 //EXERCÍCIO 2A
 function somarPorNacionais(array){
    var total=0;
