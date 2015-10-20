@@ -15,3 +15,12 @@ function ordenarPorMundiais(array){
 array.sort((a,b)=>a.titulos[2].qtd<b.titulos[2].qtd);
 for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
 };
+//EXERCÍCIO 2A
+function somarPorNacionais(array){
+   var total=0;
+   for(var i=0;i<array.length;i++){
+      total=total+(clubes[i].titulos[0].qtd);
+   }
+   return total;
+};
+
