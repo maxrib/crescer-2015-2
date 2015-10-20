@@ -53,8 +53,9 @@ function fibonaSum(n){
 function excelis(s){
 	var soma=0;
 	for(var i=0;i<s.length;i++){
-     var valor = s.charCodeAt(i)-64;
-     soma=soma*26 + valor;
+		s=s.toUpperCase();
+		var valor = s.charCodeAt(i)-64;
+		soma=soma*26 + valor;
    }
 	return soma;
 };
