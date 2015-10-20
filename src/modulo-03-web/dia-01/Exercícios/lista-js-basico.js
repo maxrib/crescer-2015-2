@@ -25,3 +25,15 @@ function maiorTexto(mt) {
 	return longest;
 }
 
+//EXERCÍCIO 3
+function imprime(arr,func) {
+	if(typeof func==="function") {
+		for(var i=0;i < arr.length;i++) {
+			func(arr[i]);
+		}
+	}
+	else {
+		return 'shimbalacreks';
+	}
+};
+
