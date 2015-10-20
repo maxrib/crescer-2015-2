@@ -16,6 +16,12 @@ function ordenarPorMundiais(array){
    for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
 };
 
+//MELHORIA EXERCÍCIO 1
+function ordenarPorTitulos(indice,array){
+   array.sort((a,b)=>a.titulos[indice].qtd<b.titulos[indice].qtd);
+   for(var i=0;i<array.length;i++){console.log(clubes[i].nome);};
+}
+
 //EXERCÍCIO 2A
 function somarPorNacionais(array){
    var total=0;
