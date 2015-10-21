@@ -6,10 +6,10 @@ function isNumber(n){
 function daisygame(p1) {
 	if(isNumber(p1) && p1%2==0) {
 		return 'Love me not';
-	};
+	}
 	else {
 		return 'Love me';
-	};
+	}
 };
 
 //EXERCÍCIO 2
@@ -31,10 +31,10 @@ function imprime(arr,func) {
 		for(var i=0;i < arr.length;i++) {
 			func(arr[i]);
 		};
-	};
+	}
 	else {
 		return 'shimbalacreks';
-	};
+	}
 };
 
 //EXERCÍCIO 4
