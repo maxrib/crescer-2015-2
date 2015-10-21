@@ -9,3 +9,10 @@ function Item(sku,desc,qtd,valorUnit){
 
 var CarrinhoDeCompras=[];
 
+function addToCart(skuItem){
+   itens.filter(function(elem) {
+      if(elem.sku===skuItem){
+         CarrinhoDeCompras.push(elem);
+      }
+   });
+};
