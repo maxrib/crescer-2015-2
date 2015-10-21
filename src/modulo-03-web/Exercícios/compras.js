@@ -1,17 +1,11 @@
-function Item(sku,descricao,qtd,valorUnit){
-   this.sku=sku;
-   this.descricao=descricao;
-   this.qtd=qtd;
-   this.valorUnit=valorUnit;
-}
+var itens=[];
 
-function CarrinhoDeCompras(sku,descricao,qtd,valorUnit){
-   this.sku=sku;
-   this.descricao=descricao;
-   this.qtd=qtd;
-   this.valorUnit=valorUnit;
-}
+function Item(sku,desc,qtd,valorUnit){
+   itens.push({   sku: this.sku=sku,
+                  descricao: this.desc=desc,
+                  quantidade: this.qtd=qtd,
+                  ValorUnitario: this.valorUnit=valorUnit});
+};
 
-   CarrinhoDeCompras.prototype.adicionarItem = function(item.sku) {
-      CarrinhoDeCompras.push(item.sku,item.descricao,item.qtd,item.valorUnit);
-   }
+var CarrinhoDeCompras=[];
+
