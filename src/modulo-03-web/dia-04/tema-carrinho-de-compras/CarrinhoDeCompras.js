@@ -15,7 +15,7 @@ CarrinhoDeCompras.prototype.remover = function(sku) {
 };
 
 CarrinhoDeCompras.prototype.atualizarQuantidade = function(sku, quantidade) {
-  
+
   this.itens.map(function(item) {
 
     if (item.sku === sku) {
@@ -28,7 +28,7 @@ CarrinhoDeCompras.prototype.atualizarQuantidade = function(sku, quantidade) {
 };
 
 CarrinhoDeCompras.prototype.calcularValorTotal = function() {
-  
+
   var desconto = this.sortearDesconto() ? 0.1 : 0;
 
   var total = this.itens.reduce(function(soma, elem) {
@@ -44,4 +44,19 @@ CarrinhoDeCompras.prototype.sortearDesconto = function() {
   return sorte;
 };
 
+CarrinhoDeCompras.prototype.forcarCompra = function() {
+   var self=this;
+   this.interval = setInterval(function(){
+      self.itens.forEach(function(elem){
+         console.log('Antes: ',elem.valorUnitario);
+         elem.valorUnitario += elem.valorUnitario *.1;
+         console.log('Depois: ',elem.valorUnitario);
+      });
+   },5000);
+};
+
+CarrinhoDeCompras.prototype.concluirPedido = function(){
+   clearInterval(this.interval);
+   delete this.interval;
+}
 // }
