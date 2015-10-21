@@ -49,13 +49,11 @@ function somarPorTodosTitulos(array){
       }
    }
    return total;
-}
+};
 
 //EXERCÍCIO 3
 function apenasOsMelhores(array){
-   for(var i=0;i<array.length;i++){
-      if(clubes[i].titulos[0].qtd>18){
-         return clubes[i].nome;
-      }
-   }
-}
+   return array.filter(function(elem) {
+     return elem.titulos[0].qtd > 18;
+   });
+};
