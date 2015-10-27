@@ -1,0 +1,6 @@
+c:\users\maxoel.ribeiro\documents\visual studio 2015\Projects\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+c:\users\maxoel.ribeiro\documents\visual studio 2015\Projects\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.exe
+c:\users\maxoel.ribeiro\documents\visual studio 2015\Projects\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.pdb
+c:\users\maxoel.ribeiro\documents\visual studio 2015\Projects\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+c:\users\maxoel.ribeiro\documents\visual studio 2015\Projects\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.exe
+c:\users\maxoel.ribeiro\documents\visual studio 2015\Projects\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.pdb
