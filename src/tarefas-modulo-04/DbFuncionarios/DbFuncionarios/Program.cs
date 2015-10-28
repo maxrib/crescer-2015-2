@@ -19,8 +19,18 @@ namespace DbFuncionarios
             //    Console.WriteLine(item.TituloCargo);
             //    Console.WriteLine();
             //}
-            BuscarPorNome("Lucas");
+            BuscaRapida("Lucas");
             Console.Read();
+        }
+
+        public static IList<dynamic> BuscaRapida(string nome)
+        {
+            var baseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
+
+            var resultado = funcionarios.Where(f => f.Nome.Contains(nome)).Select(f => new { f.Nome, f.Cargo.Titulo }).ToArray();
+
+            return resultado;
         }
 
         public static IList<Funcionario> BuscarPorNome(string nome)

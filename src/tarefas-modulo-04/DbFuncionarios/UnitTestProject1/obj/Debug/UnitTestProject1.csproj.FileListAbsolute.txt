@@ -1,0 +1,8 @@
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\bin\Debug\DbFuncionarios.exe
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\bin\Debug\DbFuncionarios.pdb
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
