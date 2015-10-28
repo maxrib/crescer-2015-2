@@ -1,0 +1,7 @@
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\modulo-04-c-sharp\dia-02\DbFuncionarios\DbFuncionarios\bin\Debug\DbFuncionarios.exe.config
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\DbFuncionarios\bin\Debug\DbFuncionarios.exe.config
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\DbFuncionarios\bin\Debug\DbFuncionarios.exe
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\DbFuncionarios\bin\Debug\DbFuncionarios.pdb
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\DbFuncionarios\obj\Debug\DbFuncionarios.csprojResolveAssemblyReference.cache
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\DbFuncionarios\obj\Debug\DbFuncionarios.exe
+C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\DbFuncionarios\DbFuncionarios\obj\Debug\DbFuncionarios.pdb
