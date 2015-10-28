@@ -19,9 +19,18 @@ namespace DbFuncionarios
             //    Console.WriteLine(item.TituloCargo);
             //    Console.WriteLine();
             //}
-
-            OrdenadosPorCargo();
+            BuscarPorNome("Lucas");
             Console.Read();
+        }
+
+        public static IList<Funcionario> BuscarPorNome(string nome)
+        {
+            var baseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
+
+            var resultado = funcionarios.Where(funcionario => funcionario.Nome.Contains(nome)).OrderBy(funcionario => funcionario.Nome).ToList();
+
+            return resultado;
         }
 
         static void Criarasdasd(int? id)
