@@ -52,7 +52,15 @@ namespace DbFuncionarios
             return query.ToArray();
         }
 
-        
+        static IList<Funcionario> OrdenadosPorCargo()
+        {
+            var baseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
+
+            var resultado = funcionarios.OrderBy(funcionario => funcionario.Cargo.Titulo).ToList();
+
+            return resultado;
+        }
 
         static IList<Funcionario> BuscarOrdenadosPorNome()
         {
