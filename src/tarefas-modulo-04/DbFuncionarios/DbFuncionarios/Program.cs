@@ -19,16 +19,26 @@ namespace DbFuncionarios
             //    Console.WriteLine(item.TituloCargo);
             //    Console.WriteLine();
             //}
-            BuscaRapida("Lucas");
+            BuscarPorTurno("Tarde");
             Console.Read();
         }
 
-        public static IList<dynamic> BuscaRapida(string nome)
+        public static IList<Funcionario> BuscarPorTurno(params string[] turnos)
         {
             var baseDeDados = new BaseDeDados();
             List<Funcionario> funcionarios = baseDeDados.Funcionarios;
 
-            var resultado = funcionarios.Where(f => f.Nome.Contains(nome)).Select(f => new { f.Nome, f.Cargo.Titulo }).ToArray();
+            var resultado = funcionarios.Where(funcionario => funcionario.TurnoTrabalho.Equals(turnos));
+
+            return resultado.ToArray();
+        }
+
+        public static IList<dynamic> BuscaRapida()
+        {
+            var baseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
+
+            var resultado = funcionarios.Select(f => new { f.Nome, f.Cargo.Titulo }).ToArray();
 
             return resultado;
         }
