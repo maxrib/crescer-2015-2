@@ -37,7 +37,9 @@ namespace Locadora.UI
                         break;
                     case 2:
                         Console.Clear();
-                        Locadora.Dominio.Dominio.PesquisarJogos();
+                        Console.WriteLine("Digite o nome do jogo:");
+                        var nomeBusca = Console.ReadLine();
+                        Locadora.Dominio.Dominio.PesquisarJogos(nomeBusca);
                         Console.ReadLine();
                         break;
                     case 3:

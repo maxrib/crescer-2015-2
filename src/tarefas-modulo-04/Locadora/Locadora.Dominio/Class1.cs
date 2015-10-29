@@ -29,10 +29,21 @@ namespace Locadora.Dominio
             locadoraXML.Save(caminho);
         }
 
-        public static void PesquisarJogos()
+        public static void PesquisarJogos(string nomeJogo)
         {
-            Console.WriteLine("Pesquisando jogos...");
+            XElement locadoraXML = XElement.Load(caminho);
+
+            IEnumerable<XElement> buscaJogo =
+                from el in locadoraXML.Elements("jogo")
+                where (string)el.Element("nome") == nomeJogo
+                select el;
+            foreach (XElement el in buscaJogo)
+            {
+                XElement jogo = el.Element("nome");
+                Console.WriteLine(String.Format("{0} - {1}\n",jogo.Value,el.Attribute("id")));
+            }
         }
+
         public static void EditarJogo()
         {
             Console.WriteLine("Editando jogo...");
