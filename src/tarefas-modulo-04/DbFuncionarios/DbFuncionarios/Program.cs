@@ -56,6 +56,19 @@ namespace DbFuncionarios
             return resultado;
         }
 
+        //Exercício D
+        public static IList<Funcionario> BuscarPorTurno(params TurnoTrabalho[] turnos)
+        {
+            var baseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
+
+            var query = from turno in turnos
+                        join f in funcionarios
+                        on turno equals f.TurnoTrabalho
+                        select f;
+            return query.ToList();
+        }
+
         static void Criarasdasd(int? id)
         {
             if(id.HasValue)
