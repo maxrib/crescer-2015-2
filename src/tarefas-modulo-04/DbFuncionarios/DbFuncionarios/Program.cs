@@ -19,8 +19,6 @@ namespace DbFuncionarios
             //    Console.WriteLine(item.TituloCargo);
             //    Console.WriteLine();
             //}
-            BuscarPorTurno(TurnoTrabalho.Manha,TurnoTrabalho.Tarde);
-            Console.Read();
         }
 
         //Exercício A
@@ -83,7 +81,17 @@ namespace DbFuncionarios
                         select newGroup;
 
             return query.ToArray();
+        }
 
+        //Exercício F
+        public static IList<Funcionario> BuscarPorCargo(Cargo cargo)
+        {
+            var BaseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = BaseDeDados.Funcionarios;
+
+            var resultado = funcionarios.Where(f => f.Cargo.Titulo == cargo.Titulo).ToList();
+
+            return resultado; 
         }
 
         static void Criarasdasd(int? id)
