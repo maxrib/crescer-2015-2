@@ -19,36 +19,39 @@ namespace DbFuncionarios
             //    Console.WriteLine(item.TituloCargo);
             //    Console.WriteLine();
             //}
-            BuscarPorTurno("Tarde");
+            BuscarPorTurno(TurnoTrabalho.Manha,TurnoTrabalho.Tarde);
             Console.Read();
         }
 
-        public static IList<Funcionario> BuscarPorTurno(params string[] turnos)
+        //Exercício A
+        public static IList<Funcionario> OrdenadosPorCargo()
         {
             var baseDeDados = new BaseDeDados();
             List<Funcionario> funcionarios = baseDeDados.Funcionarios;
 
-            var resultado = funcionarios.Where(funcionario => funcionario.TurnoTrabalho.Equals(turnos));
-
-            return resultado.ToArray();
-        }
-
-        public static IList<dynamic> BuscaRapida()
-        {
-            var baseDeDados = new BaseDeDados();
-            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
-
-            var resultado = funcionarios.Select(f => new { f.Nome, f.Cargo.Titulo }).ToArray();
+            var resultado = funcionarios.OrderBy(funcionario => funcionario.Cargo.Titulo).ToList();
 
             return resultado;
         }
 
+        //Exercício B
         public static IList<Funcionario> BuscarPorNome(string nome)
         {
             var baseDeDados = new BaseDeDados();
             List<Funcionario> funcionarios = baseDeDados.Funcionarios;
 
             var resultado = funcionarios.Where(funcionario => funcionario.Nome.Contains(nome)).OrderBy(funcionario => funcionario.Nome).ToList();
+
+            return resultado;
+        }
+
+        //Exercício C
+        public static IList<dynamic> BuscaRapida()
+        {
+            var baseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
+
+            var resultado = funcionarios.Select(f => new { f.Nome, f.Cargo.Titulo }).ToArray();
 
             return resultado;
         }
@@ -79,16 +82,6 @@ namespace DbFuncionarios
                         };
 
             return query.ToArray();
-        }
-
-        public static IList<Funcionario> OrdenadosPorCargo()
-        {
-            var baseDeDados = new BaseDeDados();
-            List<Funcionario> funcionarios = baseDeDados.Funcionarios;
-
-            var resultado = funcionarios.OrderBy(funcionario => funcionario.Cargo.Titulo).ToList();
-
-            return resultado;
         }
 
         static IList<Funcionario> BuscarOrdenadosPorNome()
