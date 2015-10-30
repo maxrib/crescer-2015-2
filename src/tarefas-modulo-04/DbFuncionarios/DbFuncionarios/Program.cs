@@ -66,7 +66,24 @@ namespace DbFuncionarios
                         join f in funcionarios
                         on turno equals f.TurnoTrabalho
                         select f;
+
             return query.ToList();
+        }
+
+        //Exercício E
+        public static IList<dynamic> QtdFuncionariosPorTurno(params TurnoTrabalho[] turnos)
+        {
+            var BaseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = BaseDeDados.Funcionarios;
+
+            var query = from turno in turnos
+                        join f in funcionarios
+                        on turno equals f.TurnoTrabalho
+                        group f by f.TurnoTrabalho into newGroup
+                        select newGroup;
+
+            return query.ToArray();
+
         }
 
         static void Criarasdasd(int? id)
