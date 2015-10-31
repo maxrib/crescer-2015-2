@@ -18,7 +18,7 @@ namespace DbFuncionarios
             //    Console.WriteLine(item.Nome);
             //    Console.WriteLine(item.TituloCargo);
             //    Console.WriteLine();
-            //}
+            //}            
         }
 
         //Exercício A
@@ -92,6 +92,18 @@ namespace DbFuncionarios
             var resultado = funcionarios.Where(f => f.Cargo.Titulo == cargo.Titulo).ToList();
 
             return resultado; 
+        }
+
+        //Exercício G
+        public static IList<Funcionario> FiltrarPorIdadeAproximada(int idade)
+        {
+            var BaseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = BaseDeDados.Funcionarios;
+
+            var resultado = funcionarios.Where(f => DateTime.Now.Year - f.DataNascimento.Year >= idade - 5 && 
+                                                    DateTime.Now.Year - f.DataNascimento.Year <= idade + 5).ToList();
+
+            return resultado;
         }
 
         static void Criarasdasd(int? id)
