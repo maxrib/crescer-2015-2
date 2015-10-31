@@ -138,6 +138,26 @@ namespace DbFuncionarios
             return resultado;
         }
 
+        //Exercício J
+        public static dynamic FuncionarioMaisComplexo()
+        {
+            var BaseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = BaseDeDados.Funcionarios;
+
+            string cons = "[b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,w,x,y,z]";
+            int maisCons = funcionarios.Max(funcionario => Regex.Matches(funcionario.Nome, cons).Count);
+
+            Funcionario complex = funcionarios.First(funcionario => Regex.Matches(funcionario.Nome, cons).Count == maisCons);
+
+            double salario = complex.Cargo.Salario;
+            return new
+            {
+                Nome = complex.Nome,
+                SalarioRS = "R$ " + String.Format("{0:0.00}", salario),
+                SalarioUS = "US$ " + String.Format("{0:0.00}", salario)
+            };
+        }
+
         static void Criarasdasd(int? id)
         {
             if(id.HasValue)
