@@ -106,6 +106,26 @@ namespace DbFuncionarios
             return resultado;
         }
 
+        //Exercício H
+        public static double SalarioMedio(TurnoTrabalho? turno)
+        {
+            var BaseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = BaseDeDados.Funcionarios;
+            
+            if (turno.HasValue)
+            {
+                var resultado = funcionarios.Where(f => f.TurnoTrabalho == turno).ToList();
+                var media = resultado.Average(m => m.Cargo.Salario);
+                return media;
+            }
+            else
+            {
+                var resultado = funcionarios.Select(f => f.Cargo.Salario).ToList();
+                var media = resultado.Average();
+                return media;
+            }
+        }
+
         static void Criarasdasd(int? id)
         {
             if(id.HasValue)
