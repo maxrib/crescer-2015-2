@@ -126,6 +126,17 @@ namespace DbFuncionarios
             }
         }
 
+        //Exercício I
+        public static IList<Funcionario> AniversariantesDoMes()
+        {
+            var BaseDeDados = new BaseDeDados();
+            List<Funcionario> funcionarios = BaseDeDados.Funcionarios;
+
+            var resultado = funcionarios.Where(f => f.DataNascimento.Month == DateTime.Now.Month).ToList();
+
+            return resultado;
+        }
+
         static void Criarasdasd(int? id)
         {
             if(id.HasValue)
