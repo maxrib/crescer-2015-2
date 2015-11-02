@@ -76,7 +76,7 @@
     <categoria>RPG</categoria>
   </jogo>
   <jogo id="16">
-    <nome>International Super Star Soccer Deluxe</nome>
+    <nome>International Soccer</nome>
     <preco>45</preco>
     <categoria>ESPORTE</categoria>
   </jogo>
@@ -96,7 +96,7 @@
     <categoria>AVENTURA</categoria>
   </jogo>
   <jogo id="20">
-    <nome>Mickey to Donald: Magical Adventure 3</nome>
+    <nome>Mickey and Donald 3</nome>
     <preco>32.9</preco>
     <categoria>AVENTURA</categoria>
   </jogo>
