@@ -37,10 +37,18 @@ namespace Locadora.Dominio
                 from el in locadoraXML.Elements("jogo")
                 where ((string)el.Element("nome")).ToUpper().Contains(nomeJogo.ToUpper())
                 select el;
-            foreach (XElement el in buscaJogo)
+
+            if (buscaJogo.Count() >= 1 && nomeJogo != "")
             {
-                XElement jogo = el.Element("nome");
-                Console.WriteLine(String.Format("{0} - {1}\n",jogo.Value,el.Attribute("id")));
+                foreach (XElement el in buscaJogo)
+                {
+                    XElement jogo = el.Element("nome");
+                    Console.WriteLine(string.Format("{0} - {1}\n", jogo.Value, el.Attribute("id")));
+                }
+            }
+            else
+            {
+                Console.WriteLine("Jogo não encontrado!");
             }
         }
 
