@@ -35,7 +35,6 @@ namespace Locadora.Dominio
 
             IEnumerable<XElement> buscaJogo =
                 from el in locadoraXML.Elements("jogo")
-                where (string)el.Element("nome") == nomeJogo
                 where ((string)el.Element("nome")).ToUpper().Contains(nomeJogo.ToUpper())
                 select el;
             foreach (XElement el in buscaJogo)
