@@ -101,9 +101,9 @@
     <categoria>AVENTURA</categoria>
   </jogo>
   <jogo id="21">
-    <nome>Tetris</nome>
-    <preco>12</preco>
-    <categoria>Arcade</categoria>
+    <nome>Tetris Attack</nome>
+    <preco>15</preco>
+    <categoria>ARCADE</categoria>
   </jogo>
   <jogo id="22">
     <nome>Castlevania</nome>

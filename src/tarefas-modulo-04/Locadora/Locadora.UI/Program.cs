@@ -44,7 +44,9 @@ namespace Locadora.UI
                         break;
                     case 3:
                         Console.Clear();
-                        Locadora.Dominio.Dominio.EditarJogo();
+                        Console.WriteLine("Digite o id do jogo:");
+                        int idJogo = int.Parse(Console.ReadLine());
+                        Locadora.Dominio.Dominio.EditarJogo(idJogo);
                         Console.ReadLine();
                         break;
                     case 4:
