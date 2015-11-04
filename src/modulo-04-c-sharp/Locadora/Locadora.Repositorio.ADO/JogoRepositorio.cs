@@ -17,7 +17,7 @@ namespace Locadora.Repositorio.ADO
         public int Atualizar(Jogo entidade)
         {
             using (IDbConnection conexao = CriarConexao())
-            {
+            {                
                 var sql = new StringBuilder();
                 sql.Append(" UPDATE Jogo set ");
                 sql.Append(" Nome = @paramNome, ");
@@ -132,7 +132,6 @@ namespace Locadora.Repositorio.ADO
         private Jogo ConverterDataReaderEmJogo(IDataReader reader)
         {
             var jogo = new Jogo(
-                // você pode nomear os parâmetros no construtor =), facilita a leitura.
                 id: Convert.ToInt32(reader["Id"]),
                 idClienteLocacao: reader["IdClienteLocacao"].ToString().ToNullable<int>()
                 );

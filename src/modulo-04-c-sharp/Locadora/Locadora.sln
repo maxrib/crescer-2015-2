@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Dominio.Test", "Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Web.MVC", "Locadora.Web.MVC\Locadora.Web.MVC.csproj", "{22A0EF1D-2C02-421D-B368-4C3F49C351F3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infraestrutura", "4 - Infraestrutura", "{B8852BF0-3657-4217-B96D-39339EDC6B84}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infraestrutura", "3 - Infraestrutura", "{B8852BF0-3657-4217-B96D-39339EDC6B84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositorios", "Repositorios", "{4C4BE62A-458D-4CF0-91DD-92DBB516982C}"
 EndProject

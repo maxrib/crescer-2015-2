@@ -97,7 +97,6 @@ namespace Locadora.Repositorio.XML
                 yield return ConverterXmlEmJogo(j);
             }
         }
-
         
         private XElement ConverterJogoEmXml(Jogo jogo)
         {
