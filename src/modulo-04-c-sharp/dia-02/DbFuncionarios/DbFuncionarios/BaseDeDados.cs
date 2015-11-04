@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Dynamic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DbFuncionarios
@@ -16,6 +20,104 @@ namespace DbFuncionarios
         public BaseDeDados()
         {
             CriarBase();
+        }
+
+
+
+        public IList<Funcionario> OrdenadosPorCargo()
+        {
+            return this.Funcionarios.OrderBy(f => f.Cargo.Titulo).ToList();
+        }
+
+        public IList<Funcionario> BuscarPorNome(string nome)
+        {
+            return this.Funcionarios.Where(f => f.Nome.IndexOf(nome, StringComparison.InvariantCultureIgnoreCase) >= 0).ToList();
+        }
+
+        public IList<dynamic> BuscaRapida()
+        {
+            return this.Funcionarios.Select(f =>
+            {
+                dynamic r = new ExpandoObject();
+                r.NomeFuncionario = f.Nome;
+                r.TituloCargo = f.Cargo.Titulo;
+                return r;
+            }).ToList();
+        }
+
+        public IList<Funcionario> BuscarPorTurno(params TurnoTrabalho[] turnos)
+        {
+            return this.Funcionarios.Where(f => turnos.Length == 0 || turnos.Contains(f.TurnoTrabalho)).ToList();
+        }
+
+        public IList<dynamic> QtdFuncionariosPorTurno()
+        {
+            return this.Funcionarios.GroupBy(funcionario => funcionario.TurnoTrabalho)
+                                    .OrderBy(turno => turno.Key)
+                                    .Select(grupo =>
+            {
+                dynamic resultado = new ExpandoObject();
+                resultado.Turno = grupo.Key;
+                resultado.Qtd = grupo.Count();
+                return resultado;
+            }).ToList();
+        }
+
+        public IList<Funcionario> BuscarPorCargo(Cargo cargo)
+        {
+            return this.Funcionarios.Where(f => f.Cargo.Equals(cargo)).ToList();
+        }
+
+        public IList<Funcionario> FiltrarPorIdadeAproximada(int idade)
+        {
+            return this.Funcionarios.Where(f =>
+            {
+                int idadeFunc = CalcularIdade(f.DataNascimento);
+                return idadeFunc >= idade - 5 && idadeFunc <= idade + 5;
+            }).ToList();
+        }
+
+        public double SalarioMedio(TurnoTrabalho? turno = null)
+        {
+            return this.Funcionarios.Where(f => !turno.HasValue || f.TurnoTrabalho == turno.Value)
+                                    .Average(f => f.Cargo.Salario);
+        }
+
+        public IList<Funcionario> AniversariantesDoMes()
+        {
+            int mesAtual = DateTime.Now.Month;
+            return this.Funcionarios.Where(f => f.DataNascimento.Month == mesAtual).ToList();
+        }
+
+        public dynamic FuncionarioMaisComplexo()
+        {
+            int tamanhoMaiorNomeComConsoantes = this.Funcionarios.Max(f => Regex.Replace(f.Nome, "aouieyAOUIEY", "").Length);
+            CultureInfo ptCulture = new CultureInfo("pt-BR");
+            CultureInfo entCulture = new CultureInfo("en-US");
+
+            return this.Funcionarios.Where(f => f.Nome.Length == tamanhoMaiorNomeComConsoantes)
+                                    .Select(f => 
+                                    {
+                                        dynamic funcionario = new ExpandoObject();
+                                        funcionario.Nome = f.Nome;
+                                        funcionario.SalarioRS = f.Cargo.Salario.ToString("C", ptCulture);
+                                        funcionario.SalarioUS = f.Cargo.Salario.ToString("C", entCulture);
+                                        return funcionario;
+                                    }).First();
+        }
+
+        private int CalcularIdade(DateTime dataNascimento)
+        {
+            int anos = DateTime.Now.Year - dataNascimento.Year;
+            bool mesMenor = DateTime.Now.Month < dataNascimento.Month;
+            bool mesIgualEDiaMenor = DateTime.Now.Month == dataNascimento.Month && DateTime.Now.Day < dataNascimento.Day;
+
+            if (mesMenor || mesIgualEDiaMenor)
+            {
+                anos--;
+            }
+               
+            return anos;
         }
 
         private void CriarBase()
