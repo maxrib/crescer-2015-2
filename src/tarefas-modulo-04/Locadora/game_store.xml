@@ -110,4 +110,9 @@
     <preco>14</preco>
     <categoria>Ação</categoria>
   </jogo>
+  <jogo id="23">
+    <nome>King of Fighters</nome>
+    <preco>17</preco>
+    <categoria>LUTA</categoria>
+  </jogo>
 </jogos>
