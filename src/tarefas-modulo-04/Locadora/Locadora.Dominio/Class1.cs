@@ -108,11 +108,8 @@ namespace Locadora.Dominio
 
             var writer = new StreamWriter(reportPath, true);
 
-            var dt = string.Format("{0:dd/MM/yyyy}", DateTime.Now);
-            var hr = string.Format("{0:HH:mm:ss}", DateTime.Now);
-
             writer.WriteLine("                             LOCADORA NUNES GAMES                               ");
-            writer.WriteLine("{0}                                                              {1}", dt, hr);
+            writer.WriteLine("{0:dd/MM/yyyy}                                                              {0:HH:mm:ss}", DateTime.Now);
             writer.WriteLine("                              Relatório de jogos                                \n\n");
             writer.WriteLine("================================================================================");
             writer.WriteLine("ID       Categoria        Nome                          Preço         Disponivel");
