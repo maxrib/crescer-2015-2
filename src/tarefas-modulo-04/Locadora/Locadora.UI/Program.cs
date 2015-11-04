@@ -11,9 +11,7 @@ namespace Locadora.UI
     {
         public static void Main(string[] args)
         {
-            //Console.SetCursorPosition(10, 3);
             ushort option = 0;
-
             while (option != 5)
             {
                 Console.Clear();
@@ -33,25 +31,25 @@ namespace Locadora.UI
                         var preco = float.Parse(Console.ReadLine());
                         Console.WriteLine("Digite a categoria do jogo: ");
                         var categoria = Console.ReadLine();
-                        Locadora.Dominio.Dominio.CadastrarJogo(nome,preco,categoria);
+                        Dominio.Dominio.CadastrarJogo(nome,preco,categoria);
                         break;
                     case 2:
                         Console.Clear();
                         Console.WriteLine("Digite o nome do jogo:");
                         var nomeBusca = Console.ReadLine();
-                        Locadora.Dominio.Dominio.PesquisarJogos(nomeBusca);
+                        Dominio.Dominio.PesquisarJogos(nomeBusca);
                         Console.ReadLine();
                         break;
                     case 3:
                         Console.Clear();
                         Console.WriteLine("Digite o id do jogo:");
                         int idJogo = int.Parse(Console.ReadLine());
-                        Locadora.Dominio.Dominio.EditarJogo(idJogo);
+                        Dominio.Dominio.EditarJogo(idJogo);
                         Console.ReadLine();
                         break;
                     case 4:
                         Console.Clear();
-                        Locadora.Dominio.Dominio.ExportarRelatorio();
+                        Dominio.Dominio.ExportarRelatorio();
                         Console.ReadLine();
                         break;
                     case 5:
@@ -64,7 +62,6 @@ namespace Locadora.UI
                         break;
                 }
             }
-
             Console.Read();
         }
     }

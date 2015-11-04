@@ -11,12 +11,11 @@ namespace Locadora.Dominio
     public class Dominio
     {
         private const string caminho = @"C:\Users\Ale\Google Drive\git\crescer-2015-2\src\tarefas-modulo-04\Locadora\game_store.xml";
+        private  static readonly XElement locadoraXML = XElement.Load(caminho);
 
         public static void CadastrarJogo(string nome,float preco, string categoria)
         {
-            XElement locadoraXML = XElement.Load(caminho);
-            
-            int ultimoId = Convert.ToInt32(locadoraXML.Elements("jogo").Last().Attribute("id").Value);
+            int ultimoId = Convert.ToInt32(Dominio.locadoraXML.Elements("jogo").Last().Attribute("id").Value);
 
             XElement cadastro = new XElement("jogo",
                 new XElement("nome", nome),
@@ -32,8 +31,6 @@ namespace Locadora.Dominio
 
         public static void PesquisarJogos(string nomeJogo)
         {
-            XElement locadoraXML = XElement.Load(caminho);
-
             IEnumerable<XElement> buscaJogo =
                 from el in locadoraXML.Elements("jogo")
                 where ((string)el.Element("nome")).ToUpper().Contains(nomeJogo.ToUpper())
@@ -55,8 +52,6 @@ namespace Locadora.Dominio
 
         public static void EditarJogo(int idJogo)
         {
-            XElement locadoraXML = XElement.Load(caminho);
-
             IEnumerable<XElement> buscaJogo =
                 from el in locadoraXML.Elements("jogo")
                 where (int)el.Attribute("id") == idJogo
@@ -98,8 +93,6 @@ namespace Locadora.Dominio
 
         public static void ExportarRelatorio()
         {
-            XElement locadoraXML = XElement.Load(caminho);
-
             IEnumerable<XElement> buscaJogo =
                 from el in locadoraXML.Elements("jogo")
                 select el;
