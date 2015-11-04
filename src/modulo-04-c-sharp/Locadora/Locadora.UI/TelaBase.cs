@@ -17,7 +17,7 @@ namespace Locadora.UI
             {
                 if(jogoRepositorio == null)
                 {
-                    jogoRepositorio = new Locadora.Repositorio.ADO.JogoRepositorio();
+                    jogoRepositorio = new Locadora.Repositorio.XML.JogoRepositorio();
                 }
 
                 return jogoRepositorio;
