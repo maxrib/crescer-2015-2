@@ -35,6 +35,7 @@ namespace Locadora.Web.MVC.Controllers
             model.QuantidadeTotalDeJogos = model.Jogos.Count();
             model.JogoMaisCaro = model.Jogos.OrderBy(j => j.Preco).Last().Nome;
             model.JogoMaisBarato = model.Jogos.OrderBy(j => j.Preco).First().Nome;
+            model.ValorMedio = model.Jogos.Average(j => j.Preco);
 
             return View(model);
         }        
