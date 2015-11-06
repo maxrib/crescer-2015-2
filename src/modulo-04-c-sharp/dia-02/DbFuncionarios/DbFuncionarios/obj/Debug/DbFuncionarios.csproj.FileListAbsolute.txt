@@ -1,1 +1,0 @@
-C:\Users\Ale\Google Drive\git\crescer-2015-2\src\modulo-04-c-sharp\dia-02\DbFuncionarios\DbFuncionarios\bin\Debug\DbFuncionarios.exe.config

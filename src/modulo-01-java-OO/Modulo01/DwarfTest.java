@@ -26,17 +26,17 @@ public class DwarfTest
     @Test
     public void dwarfNasceComDataNascimentoPadrão() {
         Dwarf bofur = new Dwarf();
-        assertEquals(1, bofur.getDataNascimento().getDia());
-        assertEquals(1, bofur.getDataNascimento().getMes());
-        assertEquals(1, bofur.getDataNascimento().getAno());
+        DataTerceiraEra esperada = new DataTerceiraEra(1,1,1);
+        DataTerceiraEra obtida = bofur.getDataNascimento();
+        assertEquals(esperada, obtida);
     }
 
     @Test
     public void dwarfNasceComNomeEDataDeNascimento() {
+        DataTerceiraEra esperada = new DataTerceiraEra(12,11,1987);
         Dwarf bernardin = new Dwarf("Bernardin", new DataTerceiraEra(12, 11, 1987));
-        assertEquals(12, bernardin.getDataNascimento().getDia());
-        assertEquals(11, bernardin.getDataNascimento().getMes());
-        assertEquals(1987, bernardin.getDataNascimento().getAno());
+        assertEquals(esperada, bernardin.getDataNascimento());
+        assertEquals("Bernardin", bernardin.getNome());
     }
 
     @Test
@@ -291,4 +291,5 @@ public class DwarfTest
         dwarf.atacarOrc(orc);
         assertEquals(Status.MORTO, orc.getStatus());
     }
+
 }

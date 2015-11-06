@@ -1,6 +1,14 @@
-#text{
-   border-radius: 20px;
+body {
+  margin: 0;
 }
-body{
-   background: blue;
+
+#capas-maiden {
+  padding: 0;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 5;
 }

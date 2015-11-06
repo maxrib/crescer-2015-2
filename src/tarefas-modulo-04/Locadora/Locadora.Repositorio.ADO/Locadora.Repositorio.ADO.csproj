@@ -58,7 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SQL\01 - CriarBase.sql" />
-    <Content Include="SQL\03 - AlterarBase.sql" />
     <Content Include="SQL\02 - PopularJogos.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
