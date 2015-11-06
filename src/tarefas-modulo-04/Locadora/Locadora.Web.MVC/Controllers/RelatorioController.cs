@@ -33,6 +33,7 @@ namespace Locadora.Web.MVC.Controllers
             }
 
             model.QuantidadeTotalDeJogos = model.Jogos.Count();
+            model.JogoMaisCaro = model.Jogos.OrderBy(j => j.Preco).Last().Nome;
 
             return View(model);
         }        
